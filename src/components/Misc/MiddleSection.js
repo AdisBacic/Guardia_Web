@@ -21,7 +21,11 @@ const MiddleSection = () => {
                             Boka demo
                         </Button>
                     </div>
-                    <MyCarousel />
+
+                    <div id="anvandingsomraden-section" className="">
+                        <MyCarousel />
+                    </div>
+
 
 
                 </div>

@@ -1,28 +1,24 @@
-// import React, { useEffect, useContext, useState } from 'react';
-import { useNavigate, MemoryRouter as Router, Routes, Route} from 'react-router-dom';
+import { MemoryRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import MainWindow from '../Views/MainWindow';
 import DemoWindow from '../Views/DemoWindow';
 import PriceWindow from '../Views/PriceWindow';
 
-// const LayoutAuthorized = ({ children }) => {
-// };
-
 const Body = () => {
-
-    return (
+  return (
     <Router>
+      <RoutesContent />
+    </Router>
+  );
+};
+
+const RoutesContent = () => {
+  return (
     <Routes>
-      {/* <Route path="/" element={<LayoutAuthorized><MainWindow /></LayoutAuthorized>} /> */}
-      {/* Without auth */}
-        <Route path="/" element={<MainWindow />} />
-        <Route path="/demo" element={< DemoWindow />} />
-        <Route path="/priser" element={< PriceWindow />} />
-      {/* <Route path="/forgot-password" element={<ForgotPassword />} />
-      <Route path="/login" element={<Login />} /> */}
+      <Route path="/" element={<MainWindow />} />
+      <Route path="/demo" element={<DemoWindow />} />
+      <Route path="/priser" element={<PriceWindow />} />
     </Routes>
-  </Router>
-   );
- 
+  );
 };
 
 export default Body;

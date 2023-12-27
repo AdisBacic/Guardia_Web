@@ -18,15 +18,22 @@ const Navbar = () => {
   };
 
   const pages = [
-    { name: 'Användingsområden', path: '/anvandingsomraden' }, // Add path for each page
+    { name: 'Användingsområden', path: '/', specialHandle: true },
     { name: 'Priser', path: '/priser' }, // Ensure 'Priser' has the correct path
     { name: 'Support', path: '/support' },
     { name: 'Om oss', path: '/omoss' },
   ];
 
-  const handleNavigate = (path) => {
-    navigate(path);
+  const handleNavigate = (page) => {
+    if (page.name === 'Användingsområden') {
+      // Navigate to the home page with a query parameter indicating we need to scroll
+      navigate('/?scrollTo=anvandingsomraden');
+    } else {
+      // Regular navigation for other pages
+      navigate(page.path);
+    }
   };
+  
 
   return (
     <nav className="bg-gradient-to-r from-green-400 to-green-600 dark:from-gray-900 dark:to-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -38,9 +45,6 @@ const Navbar = () => {
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Guardia</span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-
-
-
         {/* <div className='mr-2'>
             <Button
               size="small"
@@ -55,11 +59,6 @@ const Navbar = () => {
               PDF
             </Button>
           </div> */}
-
-
-
-
-
           <Button
             size="small"
             variant="contained"
@@ -88,19 +87,25 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`items-center justify-between ${isMenuOpen ? 'flex w-full' : 'hidden'} md:flex md:w-auto md:order-1`} id="navbar-sticky">
-        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700 w-full md:w-auto">
-            {pages.map((page) => (
-              <li key={page.name}>
-                <button
-                  onClick={() => handleNavigate(page.path)}
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  {page.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
+  <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700 w-full md:w-auto">
+    {pages.map((page) => (
+      <li key={page.name}>
+        <button
+          onClick={() => {
+            if (page.specialHandle) {
+              handleNavigate({ name: 'Användingsområden' });
+            } else {
+              navigate(page.path);
+            }
+          }}
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+        >
+          {page.name}
+        </button>
+      </li>
+    ))}
+  </ul>
+</div>
       </div>
     </nav>
   );

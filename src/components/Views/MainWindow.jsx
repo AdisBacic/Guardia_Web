@@ -5,8 +5,32 @@ import SimpleSnackbar from '../Misc/Snackbar'; // adjust the path as necessary
 import Maincard from '../Misc/Maincard'; // adjust the path as necessary
 import MiddleSection from '../Misc/MiddleSection';
 import Footer from '../Misc/Footer';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const MainWindow = () => {
+
+  const location = useLocation(); 
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const shouldScroll = queryParams.get('scrollTo') === 'anvandingsomraden';
+
+    if (shouldScroll) {
+      setTimeout(() => {
+        const section = document.getElementById('anvandingsomraden-section');
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      }, 0); 
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]); 
+  
+
   return (
     <>
     {/* <SimpleSnackbar /> */}

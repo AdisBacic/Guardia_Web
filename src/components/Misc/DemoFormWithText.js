@@ -17,7 +17,7 @@ const DemoFormWithText = () => {
                         Ta första steget mot en enklare vardag med Guardia! 
                     </h5>
                     <p className="mb-3 text-xl md:text-2xl text-gray-700 dark:text-gray-400">
-                        Uppleva den smidighet och effektivitet vi erbjuder. Ingen lång bindningstid, med priser som börjar på bara 299 kr/mån. Börja din resa mot enklare hantering redan idag!
+                        Upplev den smidighet och effektivitet vi erbjuder. Ingen bindningstid, vid priser som börjar på endast 299 kr/mån. Börja din resa mot enklare hantering redan idag!
                     </p>
                 </div>
             </div>

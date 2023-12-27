@@ -4,9 +4,17 @@ import ResponsiveAppBar from '../Navbar/ResponsiveAppBar';
 import SimpleSnackbar from '../Misc/Snackbar';
 import DemoCard from '../Misc/DemoCard';
 import Footer from '../Misc/Footer';
+import { useEffect } from 'react';
+
+
 
 
 const DemoWindow = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
     {/* <SimpleSnackbar /> */}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import placeholderImage from '../../assets/images/elementor-placeholder-image.webp';
 
 const CarouselItem = ({ image }) => (
@@ -8,10 +8,17 @@ const CarouselItem = ({ image }) => (
 );
 
 const MyCarousel = () => {
-    const images = [placeholderImage, placeholderImage, placeholderImage]; // array of images
+    const images = [placeholderImage, placeholderImage, placeholderImage];
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Function to navigate to a specific slide
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        }, 4000); 
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     const goToSlide = (index) => {
         setCurrentIndex(index);
     };

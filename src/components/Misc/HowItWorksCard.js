@@ -13,7 +13,7 @@ const HowItWorksCard = () => {
                         Revolutionera Ditt Nyckelhanteringssystem med Guardia-appen
                     </h5>
                     <p className="mb-3 text-xl md:text-2xl text-gray-700 dark:text-gray-400">
-                    Genom att modernisera processen med GDPR-kompatibilitet minimerar vi onödig datalagring. Detta gör systemet mer relevant och minskar resursförbrukningen, vilket förbättrar prestandan avsevärt. Slipp tidsödande sökningar efter personuppgifter som ska rensas ut – vi hanterar det åt dig! Effektivisera och säkra din verksamhet med vår lösning
+                    Genom att modernisera processen med GDPR-kompatibilitet minimerar vi onödig datalagring. Detta gör systemet mer relevant och minskar resursförbrukningen, vilket förbättrar prestandan avsevärt. Slipp onödiga sökningar efter personuppgifter som ska rensas ut – vi hanterar det åt dig! Effektivisera och säkra din verksamhet med vår lösning
                     </p>
                 </div>
                 <img
