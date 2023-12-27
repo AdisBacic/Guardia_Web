@@ -16,7 +16,7 @@ import Fade from '@mui/material/Fade';
 const Maincard = () => {
     return (
         <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
-            <div className="cursor-default flex flex-col items-center bg-white border border-gray-200 dark:border-gray-700 dark:bg-gray-800 w-full">
+            <div className="cursor-default flex flex-col items-center bg-white border border-gray-200 border-gray-700 bg-gray-800 w-full">
                 <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
                     <div><HeroSection /></div>
                 </Grow>
@@ -33,10 +33,10 @@ const Maincard = () => {
                 <Fade in={true} timeout={800}>
 
                     <div className="flex flex-col p-4 leading-normal text-center">
-                        <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-gray-900 text-white">
                             GDPR och personuppgifter
                         </h5>
-                        <p className="mb-3 text-xl md:text-2xl text-gray-700 dark:text-gray-400">
+                        <p className="mb-3 text-xl md:text-2xl text-gray-400">
                             På Guardia tar vi säkerheten och integriteten för våra användares personliga information på stort allvar. Därför har vi infört strikta åtgärder för att säkerställa att all känslig data hanteras i enlighet med GDPR-förordningarna.
                             Vår applikation använder avancerad krypteringsteknik för att skydda användardata från obehörig åtkomst eller stöld. Dessutom samlar vi endast in den minsta mängden information som behövs för att tillhandahålla våra tjänster, och vi delar eller säljer aldrig användardata till tredje parter.
                         </p>
@@ -63,7 +63,6 @@ const Maincard = () => {
                         </div>
                     </div>
                 </Fade>
-
             </div>
         </div>
     );

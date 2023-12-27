@@ -10,7 +10,7 @@ const TextRow = () => {
     <Grid
       container
       spacing={2}
-      className="p-4 mx-auto text-gray-900 dark:text-white sm:p-8 lg:px-12" // Adjusted the horizontal padding
+      className="p-4 mx-auto text-white sm:p-8 lg:px-12" // Adjusted the horizontal padding
     >
       <Grid item xs={12} sm={6} md={4} lg={3}> {/* Adjusted column widths */}
         <div className="flex items-center justify-center"> {/* Centering contents */}
@@ -19,7 +19,7 @@ const TextRow = () => {
             0kr
           </Typography>
         </div>
-        <Typography variant="body2" component="dd" className="text-gray-500 dark:text-gray-400 text-center"> {/* Centering text */}
+        <Typography variant="body2" component="dd" className="text-gray-400 text-center"> {/* Centering text */}
           Startavgift
         </Typography>
       </Grid>
@@ -30,7 +30,7 @@ const TextRow = () => {
             Modern
           </Typography>
         </div>
-        <Typography variant="body2" component="dd" className="text-gray-500 dark:text-gray-400 text-center">
+        <Typography variant="body2" component="dd" className="text-gray-400 text-center">
           React Electron
         </Typography>
       </Grid>
@@ -52,7 +52,7 @@ const TextRow = () => {
             Multi-Plattform
           </Typography>
         </div>
-        <Typography variant="body2" component="dd" className="text-gray-500 dark:text-gray-400 text-center">
+        <Typography variant="body2" component="dd" className="text-gray-400 text-center">
           Operativfri
         </Typography>
       </Grid>

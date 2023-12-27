@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Button from '@mui/material/Button';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'; // Import the PDF icon
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 
 const Navbar = () => {
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate(); // Initialize the navigate function
 
@@ -36,13 +37,13 @@ const Navbar = () => {
   
 
   return (
-    <nav className="bg-gradient-to-r from-green-400 to-green-600 dark:from-gray-900 dark:to-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-gradient-to-r from-gray-900 to-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-600">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           <svg xmlns="http://www.w3.org/2000/svg" fill="#77d47e" viewBox="0 0 22 21" style={{ width: '64px', height: '64px' }}>
             <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.560c1.11.300 2.229.655 2.887.870a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.990a11.775 11.775 0 0 1-2.517 2.453a7.159 7.159 0 0 1-1.048.625c-.280.132-.581.240-.829.240s-.548-.108-.829-.240a7.158 7.158 0 0 1-1.048-.625a11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692a1.54 1.54 0 0 1 1.044-1.262a62.456 62.456 0 0 1 2.185-.870z" />
           </svg>
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Guardia</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Guardia</span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         {/* <div className='mr-2'>
@@ -76,7 +77,7 @@ const Navbar = () => {
             data-collapse-toggle="navbar-sticky"
             type="button"
             onClick={toggleMenu}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded={isMenuOpen ? 'true' : 'false'}
           >
@@ -87,7 +88,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`items-center justify-between ${isMenuOpen ? 'flex w-full' : 'hidden'} md:flex md:w-auto md:order-1`} id="navbar-sticky">
-  <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700 w-full md:w-auto">
+  <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700 w-full md:w-auto">
     {pages.map((page) => (
       <li key={page.name}>
         <button
@@ -98,7 +99,7 @@ const Navbar = () => {
               navigate(page.path);
             }
           }}
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:hover:text-blue-800 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
         >
           {page.name}
         </button>
