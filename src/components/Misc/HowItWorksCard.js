@@ -5,7 +5,7 @@ const HowItWorksCard = () => {
     return (
         <div
             href="#"
-            className="flex mt-20 mb-20 flex-col items-center bg-white rounded-lg bg-gray-800 w-full md:max-w-full"
+            className="flex mt-20 mb-20 flex-col items-center rounded-lg bg-gray-800 w-full md:max-w-full"
         >
             <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col justify-start p-4 leading-normal w-full md:w-1/2">

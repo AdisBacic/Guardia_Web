@@ -16,7 +16,7 @@ import Fade from '@mui/material/Fade';
 const Maincard = () => {
     return (
         <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
-            <div className="cursor-default flex flex-col items-center bg-white border border-gray-200 border-gray-700 bg-gray-800 w-full">
+            <div className="cursor-default flex flex-col items-center border border-gray-200 border-gray-700 bg-gray-800 w-full">
                 <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
                     <div><HeroSection /></div>
                 </Grow>

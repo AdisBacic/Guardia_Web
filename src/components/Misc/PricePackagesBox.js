@@ -8,13 +8,13 @@ const PricePackagesBox = () => {
             href="#"
             className="flex mt-20 mb-20 flex-col items-center rounded-lg bg-gray-800  w-full md:max-w-full"
         >
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row gap-4">
                 <div>
                     <PlanCardBasic />
                 </div>
                 <div className=''>
-                <PlanCardPrem />
-              </div>
+                    <PlanCardPrem />
+                </div>
             </div>
         </div>
     );

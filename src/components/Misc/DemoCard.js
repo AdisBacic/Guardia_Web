@@ -22,7 +22,6 @@ const DemoCard = () => {
                 <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
                     <div><DemoHeroSection /></div>
                 </Grow>
-            
                 <Slide direction="up" in={true} mountOnEnter unmountOnExit>
                     <div className="w-full mx-auto pb-20">
                     <DemoFormWithText />
