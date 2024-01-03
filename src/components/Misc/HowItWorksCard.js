@@ -1,5 +1,6 @@
 import React from 'react';
 import placeholderImage from '../../assets/images/elementor-placeholder-image.webp';
+import mainwindwGuardia from '../../assets/images/mainwindowGuardia.png';
 
 const HowItWorksCard = () => {
     return (
@@ -18,7 +19,7 @@ const HowItWorksCard = () => {
                 </div>
                 <img
                     className="rounded w-full md:w-1/2 h-96 md:h-auto"
-                    src={placeholderImage}
+                    src={mainwindwGuardia}
                     alt=""
                 />
             </div>

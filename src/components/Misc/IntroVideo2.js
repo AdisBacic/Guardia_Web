@@ -1,7 +1,7 @@
 import React from 'react';
-import VideoSource from '../../assets/images/video3.mp4';
+import VideoSource from '../../assets/images/video2.mp4';
 
-const IntroVideo = () => {
+const IntroVideo2 = () => {
     return (
         <div className="w-full"> 
             <video 
@@ -19,4 +19,4 @@ const IntroVideo = () => {
     )
 }
 
-export default IntroVideo;
+export default IntroVideo2;

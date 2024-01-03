@@ -7,6 +7,7 @@ import MiddleSection from '../Misc/MiddleSection';
 import Footer from '../Misc/Footer';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import IntroVideo from '../Misc/IntroVideo';
 
 const MainWindow = () => {
 

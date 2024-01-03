@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col flex-grow bg-gray-800 py-20 text-white mt-12">
       <Container className="container mx-auto px-6">
-        <Typography variant="h2" className="text-5xl font-bold pb-12 text-center">Integritetspolicy</Typography>
+        <Typography variant="h4" className=" font-bold pb-12 text-center">Integritetspolicy</Typography>
 
         <div className="bg-gray-900 p-12 rounded-xl shadow-lg space-y-8">
 
