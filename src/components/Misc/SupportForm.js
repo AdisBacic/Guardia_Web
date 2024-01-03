@@ -3,13 +3,15 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 
-const DemoForm = () => {
+const SupportForm = () => {
     return (
         <Box className="max-w-xs mx-auto p-4 sm:p-8 bg-gradient-to-r from-gray-700 to-gray-800 text-white border border-gray-900 rounded-xl shadow-2xl sm:max-w-lg">
             <Typography variant="h5" component="h2" gutterBottom className="text-center mb-8 text-white font-semibold">
-                Boka ett personligt demo
+                Vad kan vi hjälpa dig med?
             </Typography>
             {/* Input fields */}
             <div className="space-y-6">
@@ -26,14 +28,12 @@ const DemoForm = () => {
                     </Typography>
                
             </div>
-         
 
-            {/* Submit Button */}
             <Button fullWidth type="submit" color="success" variant="contained" className="mt-8 bg-green-700 hover:bg-green-800 text-white py-3 rounded-md transition duration-300 ease-in-out transform ">
-                Boka demo
+                Skicka meddelande
             </Button>
         </Box>
     );
 };
 
-export default DemoForm;
+export default SupportForm;

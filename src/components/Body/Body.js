@@ -2,6 +2,8 @@ import { MemoryRouter as Router, Routes, Route, useLocation } from 'react-router
 import MainWindow from '../Views/MainWindow';
 import DemoWindow from '../Views/DemoWindow';
 import PriceWindow from '../Views/PriceWindow';
+import SupportWindow from '../Views/SupportWindow';
+import PrivacyPolicyWindow from '../Views/PrivacyPolicyWindow';
 
 const Body = () => {
   return (
@@ -17,6 +19,8 @@ const RoutesContent = () => {
       <Route path="/" element={<MainWindow />} />
       <Route path="/demo" element={<DemoWindow />} />
       <Route path="/priser" element={<PriceWindow />} />
+      <Route path="/support" element={<SupportWindow />} />
+      <Route path="/privacypolicy" element={<PrivacyPolicyWindow />} />
     </Routes>
   );
 };

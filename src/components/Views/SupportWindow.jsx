@@ -1,12 +1,12 @@
 import React from 'react';
-import { Button, Typography } from '@mui/material';
 import ResponsiveAppBar from '../Navbar/ResponsiveAppBar';
-import SimpleSnackbar from '../Misc/Snackbar';
-import DemoCard from '../Misc/DemoCard';
 import Footer from '../Misc/Footer';
 import { useEffect } from 'react';
+import SupportCard from '../Misc/SupportCard';
 
-const DemoWindow = () => {
+
+const SupportWindow = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -16,12 +16,12 @@ const DemoWindow = () => {
     {/* <SimpleSnackbar /> */}
       <div className="flex flex-col min-h-screen">
         <ResponsiveAppBar />
-        <DemoCard />
+        {/* <DemoCard /> */}
+        <SupportCard />
         <Footer />
-       
       </div>
     </>
   );
 };
 
-export default DemoWindow;
+export default SupportWindow;

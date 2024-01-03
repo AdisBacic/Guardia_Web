@@ -1,27 +1,29 @@
+
 import React from 'react';
 import { Button, Typography } from '@mui/material';
 import ResponsiveAppBar from '../Navbar/ResponsiveAppBar';
-import SimpleSnackbar from '../Misc/Snackbar';
-import DemoCard from '../Misc/DemoCard';
 import Footer from '../Misc/Footer';
+import PriceCard from '../Misc/PriceCard';
 import { useEffect } from 'react';
+import PrivacyPolicy from '../Misc/PrivacyPolicy';
 
-const DemoWindow = () => {
+
+const PrivacyPolicyWindow = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <>
     {/* <SimpleSnackbar /> */}
       <div className="flex flex-col min-h-screen">
         <ResponsiveAppBar />
-        <DemoCard />
+        <PrivacyPolicy/>
         <Footer />
-       
       </div>
     </>
   );
 };
 
-export default DemoWindow;
+export default PrivacyPolicyWindow;

@@ -10,7 +10,7 @@ const BenefitsCard = () => {
         >
             <div className="flex flex-col md:flex-row">
                 <img
-                    className="rounded-full w-full md:w-1/2 h-96 md:h-auto"
+                    className="rounded w-full md:w-1/2 h-96 md:h-auto mr-2"
                     src={mainwindwGuardia}
                     alt=""
                 />

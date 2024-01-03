@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Button from '@mui/material/Button';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'; // Import the PDF icon
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 
@@ -19,18 +18,16 @@ const Navbar = () => {
   };
 
   const pages = [
-    { name: 'Användingsområden', path: '/', specialHandle: true },
-    { name: 'Priser', path: '/priser' }, // Ensure 'Priser' has the correct path
+    { name: 'Använding', path: '/', specialHandle: true },
+    { name: 'Priser', path: '/priser' }, 
     { name: 'Support', path: '/support' },
-    { name: 'Om oss', path: '/omoss' },
+    // { name: 'Om oss', path: '/omoss' },
   ];
 
   const handleNavigate = (page) => {
     if (page.name === 'Användingsområden') {
-      // Navigate to the home page with a query parameter indicating we need to scroll
       navigate('/?scrollTo=anvandingsomraden');
     } else {
-      // Regular navigation for other pages
       navigate(page.path);
     }
   };
@@ -63,9 +60,10 @@ const Navbar = () => {
           <Button
             size="small"
             variant="contained"
+            className='rounded-full'
             startIcon={<PlayArrowIcon />}
             sx={{
-              ml: { xs: 0.2, md: 2 },
+              ml: { xs: 0.1, md: 2 },
               p: { xs: 0.5, md: 2 },
             }}
             color="success"

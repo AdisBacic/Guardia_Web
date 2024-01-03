@@ -1,29 +1,36 @@
 // Footer.js
 import React from 'react';
 import Logo from './Logo';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+  
   return (
     <footer className="bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://guardia.com" className="flex items-center">
+            <div className="flex items-center">
               <Logo/>
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Guardia</span>
-            </a>
+              <span onClick={() => handleNavigate('/')} className="cursor-pointer self-center text-2xl font-semibold whitespace-nowrap text-white">Guardia</span>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             {/* Column 1 */}
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Resources</h2>
               <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="https://guardia.com/" className="hover:underline">Guardia</a>
-                </li>
-                <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
-                </li>
+              <li className="mb-4">
+                <span onClick={() => handleNavigate('/')} className="cursor-pointer hover:underline">
+                  Guardia
+                </span>
+              </li>
               </ul>
             </div>
             {/* Column 2 */}
@@ -42,12 +49,12 @@ const Footer = () => {
             <div>
               <h2 className="mb-6 text-sm font-semibold  uppercase text-white">Rättslig</h2>
               <ul className="text-gray-400">
-                <li className="mb-4">
-                  <a href="/privacy" className="hover:underline">Integritetspolicy</a>
-                </li>
-                <li>
-                  <a href="/terms" className="hover:underline">Allmänna Villkor</a>
-                </li>
+              <li className="mb-4">
+                <span onClick={() => handleNavigate('/privacypolicy')} className="cursor-pointer hover:underline">
+                  Integritetspolicy
+                </span>
+              </li>
+                
               </ul>
             </div>
           </div>
