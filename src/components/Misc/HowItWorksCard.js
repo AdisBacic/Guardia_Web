@@ -17,7 +17,7 @@ const HowItWorksCard = () => {
                     </p>
                 </div>
                 <img
-                    className="rounded w-full md:w-1/2 h-96 md:h-auto ml-2"
+                    className="rounded w-full md:w-1/2 h-96 md:h-auto"
                     src={placeholderImage}
                     alt=""
                 />
