@@ -7,7 +7,7 @@ const DemoHeroSection = () => {
         Upptäck <span className="text-indigo-500">Enkelhet</span> och <span className="text-indigo-500">Effektivitet</span>
       </h1>
       <p className="mx-auto max-w-2xl text-lg font-medium text-gray-300">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris      </p>
+      Boka en demonstration av Guardia och se själv hur vårt system kan transformera din dagliga hantering av nycklar och värdefulla tillgångar. Vår lösning garanterar inte bara säkerhet utan även en mer strukturerad och effektiv arbetsmiljö. Vänta inte, upplev fördelarna idag!     </p>
     </div>
   );
 };
