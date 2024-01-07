@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import placeholderImage from '../../assets/images/elementor-placeholder-image.webp';
 import construction from '../../assets/images/Construction.jpg';
 import fastighet from '../../assets/images/Fastighet.jpg';
 import hotell from '../../assets/images/Hreception.jpg';

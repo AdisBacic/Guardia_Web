@@ -1,6 +1,6 @@
 import React from 'react';
 import placeholderImage from '../../assets/images/elementor-placeholder-image.webp';
-import Ghome from '../../assets/images/GuardiaHome.png';
+import DashboardGuardia from '../../assets/images/DashboardGuardia.png';
 import IntroVideo from './IntroVideo';
 
 
@@ -13,7 +13,7 @@ const BenefitsCard = () => {
             <div className="flex flex-col md:flex-row">
                 <img
                     className="rounded w-full md:w-1/2 h-96 md:h-auto"
-                    src={Ghome}
+                    src={DashboardGuardia}
                     alt=""
                 />
 

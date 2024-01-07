@@ -1,6 +1,5 @@
 import React from 'react';
 import placeholderImage from '../../assets/images/elementor-placeholder-image.webp';
-import mainwindwGuardia from '../../assets/images/mainwindowGuardia.png';
 import DemoForm from './DemoForm';
 
 const DemoFormWithText = () => {
