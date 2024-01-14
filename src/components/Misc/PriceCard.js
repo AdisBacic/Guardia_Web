@@ -28,8 +28,6 @@ const PriceCard = () => {
                     <PricePackagesBox />
                     </div>
                 </Slide>
-
-                
             </div>
         </div>
     );

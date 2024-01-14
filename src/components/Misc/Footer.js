@@ -24,10 +24,10 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             {/* Column 1 */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Resources</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Resurser</h2>
               <ul className="text-gray-400">
               <li className="mb-4">
-                <span onClick={() => handleNavigate('/')} className="cursor-pointer hover:underline">
+                <span onClick={() => handleNavigate('/download')} className="cursor-pointer hover:underline">
                   Guardia
                 </span>
               </li>
@@ -54,7 +54,6 @@ const Footer = () => {
                   Integritetspolicy
                 </span>
               </li>
-                
               </ul>
             </div>
           </div>

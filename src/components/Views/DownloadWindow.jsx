@@ -4,10 +4,11 @@ import ResponsiveAppBar from '../Navbar/ResponsiveAppBar';
 import Footer from '../Misc/Footer';
 import PriceCard from '../Misc/PriceCard';
 import { useEffect } from 'react';
+import DownloadCard from '../Misc/DownloadCard';
 
 
 
-const PriceWindow = () => {
+const DownloadWindow = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,7 +20,7 @@ const PriceWindow = () => {
 
       <div className="flex flex-col min-h-screen">
         <ResponsiveAppBar />
-        <PriceCard/>
+        <DownloadCard />
         <Footer />
       </div>
       
@@ -28,4 +29,4 @@ const PriceWindow = () => {
   );
 };
 
-export default PriceWindow;
+export default DownloadWindow;
