@@ -52,45 +52,42 @@ const DownloadCard = () => {
 
 
 
-  return (
-    <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
-      <div className="cursor-default flex flex-col items-center  border border-gray-700 bg-gray-800 w-full">
-        <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
-          <div><DownloadHeroSection /></div>
-
-        </Grow>       
-        <div className="flex flex-row space-x-4 my-4 mb-48">
-      
-          <Button
-            variant="contained"
-            color="secondary"
-            startIcon={<AppleIcon />}
-            onClick={() => handleDownload('macIntel')}
+    return (
+      <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
+        <div className="cursor-default flex flex-col items-center border border-gray-700 bg-gray-800 w-full px-4 md:px-0">
+          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
+            <div><DownloadHeroSection /></div>
+          </Grow>       
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4 mb-48">
+            <Button
+              variant="contained"
+              color="secondary"
+              startIcon={<AppleIcon />}
+              onClick={() => handleDownload('macIntel')}
             >
-            Download for Mac (Intel)
-          </Button>
-
-          <Button
-            variant="contained"
-            color="primary"
-            startIcon={<LaptopWindowsIcon />}
-            onClick={() => handleDownload('windows')}
-          >
-            Download for Windows
-          </Button>
-
-          <Button
-            variant="contained"
-            color="secondary"
-            startIcon={<AppleIcon />}
-            onClick={() => handleDownload('macARM64')}
-          >
-            Download for Mac (ARM64)
-          </Button>
+              Download for Mac (Intel)
+            </Button>
+  
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<LaptopWindowsIcon />}
+              onClick={() => handleDownload('windows')}
+            >
+              Download for Windows
+            </Button>
+  
+            <Button
+              variant="contained"
+              color="secondary"
+              startIcon={<AppleIcon />}
+              onClick={() => handleDownload('macARM64')}
+            >
+              Download for Mac (ARM64)
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
-
-export default DownloadCard;
+export default DownloadCard;  
