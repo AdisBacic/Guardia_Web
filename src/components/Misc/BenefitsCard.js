@@ -11,12 +11,11 @@ const BenefitsCard = () => {
             className="flex mt-20 mb-20 flex-col items-center rounded-lg bg-gray-800  w-full md:max-w-full"
         >
             <div className="flex flex-col md:flex-row">
-                <img
-                    className="rounded w-full md:w-1/2 h-96 md:h-auto border border-gray-700 border-gray-700"
+            <img
+                    className="rounded w-full md:w-1/2 object-cover object-center md:h-auto"
                     src={DashboardGuardia}
-                    alt=""
+                    alt="Dashboard Guardia"
                 />
-
                 {/* <IntroVideo /> */}
 
 

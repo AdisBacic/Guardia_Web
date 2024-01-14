@@ -17,10 +17,10 @@ const HowItWorksCard = () => {
                     </p>
                 </div>
                 <img
-                    className="rounded w-full md:w-1/2 h-96 md:h-auto border border-gray-700 border-gray-700"
-                    src={OrderWindow}
-                    alt=""
-                />
+                 className="rounded w-full md:w-1/2 object-cover object-center md:h-auto border border-gray-700"
+                 src={OrderWindow}
+                 alt="Order Window"
+             />
             </div>
         </div>
     );

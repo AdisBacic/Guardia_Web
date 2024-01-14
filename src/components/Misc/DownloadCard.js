@@ -85,7 +85,6 @@ const DownloadCard = () => {
             </Grow>  
 
             <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
-
             <Button
               variant="contained"
               color="secondary"
