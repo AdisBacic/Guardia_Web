@@ -7,7 +7,7 @@ const DownloadHeroSection = () => {
         Ladda Ner Vår App
       </h1>
       <p className="mx-auto max-w-2xl text-lg font-medium text-gray-400">
-        Börja spara tid och pengar nu! Ladda ner Guardia-appen idag och upplev enkel och effektiv artikelhantering. Tillgänglig för Windows, Mac (Intel) och Mac (ARM64).
+       Upplev enkel och effektiv artikelhantering. Tillgänglig för Windows, Mac (Intel) och Mac (ARM64).
       </p>
     </div>
   );
