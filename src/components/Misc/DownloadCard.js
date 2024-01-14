@@ -57,8 +57,10 @@ const DownloadCard = () => {
         <div className="cursor-default flex flex-col items-center border border-gray-700 bg-gray-800 w-full px-4 md:px-0">
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
             <div><DownloadHeroSection /></div>
-          </Grow>       
+            </Grow>       
+
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4 mb-48">
+          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
             <Button
               variant="contained"
               color="secondary"
@@ -67,7 +69,11 @@ const DownloadCard = () => {
             >
               Download for Mac (Intel)
             </Button>
-  
+            </Grow>  
+                
+
+            <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+
             <Button
               variant="contained"
               color="primary"
@@ -76,7 +82,10 @@ const DownloadCard = () => {
             >
               Download for Windows
             </Button>
-  
+            </Grow>  
+
+            <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+
             <Button
               variant="contained"
               color="secondary"
@@ -85,6 +94,8 @@ const DownloadCard = () => {
             >
               Download for Mac (ARM64)
             </Button>
+            </Grow>  
+
           </div>
         </div>
       </div>
