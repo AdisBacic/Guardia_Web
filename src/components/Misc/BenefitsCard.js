@@ -19,7 +19,7 @@ const BenefitsCard = () => {
 
 
                 <div className="flex flex-col justify-start p-4 leading-normal w-full md:w-1/2">
-                    <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-gray-900 text-white">
+                    <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight  text-white">
                         Effektiv tids- och kostnadsbesparing med digital nyckelhantering
                     </h5>
                     <p className="mb-3 text-xl md:text-2xl text-gray-400">

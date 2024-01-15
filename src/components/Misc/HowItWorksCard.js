@@ -9,7 +9,7 @@ const HowItWorksCard = () => {
         >
             <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col justify-start p-4 leading-normal w-full md:w-1/2">
-                    <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-gray-900 text-white">
+                    <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-white">
                         Revolutionera Ditt Nyckelhanteringssystem med Guardia-appen
                     </h5>
                     <p className="mb-3 text-xl md:text-2xl text-gray-400">

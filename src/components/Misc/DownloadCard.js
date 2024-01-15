@@ -16,7 +16,7 @@ const DownloadCard = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        setIsLoading(true);
+        setIsLoading(false);
         fetch('https://api.github.com/repos/Eftiand/Guardia-Release/releases/latest')
             .then(response => response.json())
             .then(data => {

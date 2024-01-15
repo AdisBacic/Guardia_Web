@@ -16,7 +16,7 @@ const Maincard = () => {
     return (
 
         <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-10">
-            <div className="cursor-default flex flex-col items-center border border-gray-200 border-gray-700 bg-gray-800 w-full">
+            <div className="cursor-default flex flex-col items-center border border-gray-700 bg-gray-800 w-full">
                 <Container maxWidth="xl">
                     <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
                         <div><HeroSection /></div>
@@ -32,7 +32,7 @@ const Maincard = () => {
                     <Fade in={true} timeout={800}>
 
                         <div className="flex flex-col p-4 leading-normal text-center">
-                            <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-gray-900 text-white">
+                            <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-white">
                                 GDPR och personuppgifter
                             </h5>
                             <p className="mb-3 text-xl md:text-2xl text-gray-400">
