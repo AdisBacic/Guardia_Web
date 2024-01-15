@@ -11,6 +11,7 @@ import Slide from '@mui/material/Slide';
 import Fade from '@mui/material/Fade';
 import Container from '@mui/material/Container';
 import IntroVideo from './IntroVideo';
+import { motion } from "framer-motion";
 
 const Maincard = () => {
     return (
@@ -18,18 +19,19 @@ const Maincard = () => {
         <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-10">
             <div className="cursor-default flex flex-col items-center border border-gray-700 bg-gray-800 w-full">
                 <Container maxWidth="xl">
+
                     <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
                         <div><HeroSection /></div>
                     </Grow>
     
-                    <Slide direction="up" in={true} mountOnEnter unmountOnExit>
                         <div className="w-full">
+                   
                             <BenefitsCard />
                             <HowItWorksCard />
-                        </div>
-                    </Slide>
 
-                    <Fade in={true} timeout={800}>
+                        </div>
+
+                    <Fade in={true} timeout={2000}>
 
                         <div className="flex flex-col p-4 leading-normal text-center">
                             <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-white">
@@ -52,6 +54,7 @@ const Maincard = () => {
                             </div>
                         </div>
                     </Fade>
+                    
                 </Container>
 
             </div>

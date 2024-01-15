@@ -61,7 +61,7 @@ const Navbar = () => {
             data-collapse-toggle="navbar-sticky"
             type="button"
             onClick={toggleMenu}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-smrounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded={isMenuOpen ? 'true' : 'false'}
           >
@@ -83,7 +83,7 @@ const Navbar = () => {
               navigate(page.path);
             }
           }}
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:hover:text-blue-800 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
+          className="block py-2 px-3 rounded hover:transition-colors duration-300  md:p-0 md:hover:text-blue-800 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
         >
           {page.name}
         </button>
