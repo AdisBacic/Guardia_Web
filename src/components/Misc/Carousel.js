@@ -6,16 +6,15 @@ import securit from '../../assets/images/Securityguard.jpg';
 
 const CarouselItem = ({ image, title, description }) => (
     <div className="relative">
-        <div className="absolute w-full top-0 left-0 bg-black bg-opacity-60 p-4">
+        <img src={image} alt="carousel-item" className="rounded-lg shadow-lg object-cover w-full max-h-[500px]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 p-4 flex items-end">
             <div className="text-white">
                 <h2 className="text-xl font-semibold mb-2">{title}</h2>
                 <p className="text-lg">{description}</p>
             </div>
         </div>
-        <img src={image} alt="carousel-item" className="rounded-lg shadow-lg" />
     </div>
 );
-
 const MyCarousel = () => {
     const images = [
         {

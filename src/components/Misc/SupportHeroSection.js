@@ -8,7 +8,7 @@ const SupportHeroSection = () => {
         Frågor <span className="text-indigo-500">Funderingar</span> eller <span className="text-indigo-500">Problem?</span>
       </h1>
       <p className="mx-auto max-w-2xl text-lg font-medium text-gray-300">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris      </p>
+      Skicka ett meddelande via formuläret eller kontakta oss på guardia.informaion@gmail.com</p>
     </div>
   );
 };

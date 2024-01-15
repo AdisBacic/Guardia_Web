@@ -17,7 +17,7 @@ const HowItWorksCard = () => {
                     </p>
                 </div>
                 <img
-                 className="rounded w-full md:w-1/2 object-cover object-center md:h-auto border border-gray-700"
+                 className="rounded w-full md:w-1/2 object-cover object-center md:h-auto border border-gray-700 shadow-2xl"
                  src={OrderWindow}
                  alt="Order Window"
              />

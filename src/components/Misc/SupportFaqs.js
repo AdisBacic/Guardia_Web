@@ -1,30 +1,43 @@
 import { Grow } from '@mui/material';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const faqs = [
   {
-    question: 'Hur långt vingspan har en kungsörn?',
-    answer: '4 meter men 2 om den flyger motsols 😶‍🌫️',
-    link: '/',
-    linkText: 'starta!',
-  },  
+    question: 'Vad innebär  artikelhantering med GDPR?',
+    answer: "En viktig aspekt av GDPR är 'rätten att bli glömd', vilket innebär att individens data bör raderas när den inte längre är nödvändig för det ursprungliga syftet. Guardia tillämpar detta genom att flagga användare som inte varit aktiva under en längre tid. Detta gör det möjligt för administratörer att enkelt identifiera och, om nödvändigt, radera användarprofiler för att upprätthålla GDPR-konformitet.",
+  }, 
   {
-    question: 'Hur långt vingspan har en kungsörn?',
-    answer: '4 meter men 2 om den flyger motsols 😶‍🌫️',
-    link: '/',
-    linkText: 'starta!',
+    question: 'Kan flera person vara registrerade på samma plats?',
+    answer: 'Ja! Guardia är en molnbaserad tjänst som är tillgänglig från alla enheter med internetuppkoppling. Detta gör det möjligt för flera användare att logga in och hantera samma artiklar samtidigt.',
+  },
+  {
+    question: 'Vilka artiklar kan jag hantera?',
+    answer: 'Guardia tillåter alla typer av artiklar att lagras och hanteras. Det kan vara allt från datorer till kaffemaskiner. Det är upp till dig! Guardia är det optimala verktyget för strukturerad artikelhantering.',
+  },   
+  {
+    question: 'Hur börjar jag använda Guardia?',
+    answer: 'Boka ett demo med oss! Vi kommer att gå igenom Guardia och hur det kan hjälpa dig och ditt företag. Om du är intresserad av att använda Guardia tveka inte att kontakta oss!',
+    link: '/demo',
+    linkText: 'Boka demo!',
   },  
+  
 ];
 
 const SupportFaqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const toggle = index => {
     if (openIndex === index) {
-      setOpenIndex(null); // close accordion if clicking the open one
+      setOpenIndex(null);
     } else {
-      setOpenIndex(index); // else open the clicked one and close others
+      setOpenIndex(index);
     }
+  };
+
+  const handleDemoClick = () => {
+    navigate('/demo'); // Programmatically navigate to the "/demo" route
   };
 
   return (
@@ -39,7 +52,7 @@ const SupportFaqs = () => {
               aria-expanded={openIndex === index}
               aria-controls={`accordion-flush-body-${index}`}
             >
-  <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500">{faq.question}</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500">{faq.question}</span>
               <svg
                 data-accordion-icon
                 className={`w-3 h-3 shrink-0 ${openIndex === index ? 'rotate-180' : ''}`}
@@ -62,7 +75,19 @@ const SupportFaqs = () => {
             >
               <div className="py-5 border-b border-gray-200 dark:border-gray-700">
                 <p className="mb-2 text-gray-500 dark:text-gray-400">{faq.answer}</p>
-                <p className="text-gray-500 dark:text-gray-400">Tryck på denna länk för att <a href={faq.link} className="text-blue-600 dark:text-blue-500 hover:underline">{faq.linkText}</a></p>
+                {faq.link === '/demo' ? (
+                  <p className="text-gray-500 dark:text-gray-400">
+                    <button className="text-blue-600 dark:text-blue-500 hover:underline" onClick={handleDemoClick}>
+                      {faq.linkText}
+                    </button>
+                  </p>
+                ) : (
+                  <p className="text-gray-500 dark:text-gray-400">
+                    <a href={faq.link} className="text-blue-600 dark:text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                      {faq.linkText}
+                    </a>
+                  </p>
+                )}
               </div>
             </div>
           </Grow>
