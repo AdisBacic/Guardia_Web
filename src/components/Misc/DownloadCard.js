@@ -5,6 +5,7 @@ import LaptopWindowsIcon from '@mui/icons-material/LaptopWindows';
 import Grow from '@mui/material/Grow';
 import DownloadHeroSection from './DownloadHeroSection';
 
+
 const DownloadCard = () => {
     const [downloadUrls, setDownloadUrls] = useState({
         macIntel: '',
@@ -53,13 +54,13 @@ const DownloadCard = () => {
 
 
     return (
-      <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
-        <div className="cursor-default flex flex-col items-center border border-gray-700 bg-gray-800 w-full px-4 md:px-0">
+      <div className="flex items-center justify-center w-full h-screen bg-gray-800">
+      <div className="cursor-default flex flex-col items-center bg-gray-800 w-full px-4 md:px-0">
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
             <div><DownloadHeroSection /></div>
-            </Grow>       
+            </Grow>        
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4 mb-48">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4">
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
             <Button
               variant="contained"
