@@ -28,7 +28,7 @@ const Footer = () => {
               <ul className="text-gray-400">
               <li className="mb-4">
                 <span onClick={() => handleNavigate('/download')} className="cursor-pointer hover:underline">
-                  Guardia
+                  Guardia App
                 </span>
               </li>
               </ul>
