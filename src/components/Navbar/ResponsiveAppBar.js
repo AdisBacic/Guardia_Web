@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Button from '@mui/material/Button';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 
 const Navbar = () => {
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -95,5 +95,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;

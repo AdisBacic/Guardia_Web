@@ -10,7 +10,7 @@ const BenefitsCard = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', duration: 1.5, delay: 0.5 }}
-          className="rounded w-full md:w-1/2 object-cover object-center md:h-auto shadow-2xl"
+          className="rounded w-full md:w-1/2 object-cover object-center md:h-auto shadow-2xl mb-10"
           src={DashboardGuardia}
           alt="Dashboard Guardia"
           viewport={{once : true}}
