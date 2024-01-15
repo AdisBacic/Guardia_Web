@@ -35,7 +35,7 @@ const MyCarousel = () => {
         {
             src: construction,
             title: "Byggbranschen",
-            description: "Till och med kebabteknikern Ahmed förlitar sig på Guardia för sina dagliga behov. Det är ett mångsidigt verktyg för att hantera nycklar och utrustning på byggarbetsplatser."
+            description: "Det är ett mångsidigt verktyg för att hantera nycklar och utrustning på byggarbetsplatser."
         },
     ];
 
