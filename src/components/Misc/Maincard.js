@@ -11,7 +11,6 @@ import Slide from '@mui/material/Slide';
 import Fade from '@mui/material/Fade';
 import Container from '@mui/material/Container';
 import IntroVideo from './IntroVideo';
-import { motion } from "framer-motion";
 
 const Maincard = () => {
     return (

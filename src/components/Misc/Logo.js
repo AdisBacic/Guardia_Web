@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 
 const Logo = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="#77d47e" viewBox="0 0 22 21" style={{ width: '45px', height: '64px' }}>

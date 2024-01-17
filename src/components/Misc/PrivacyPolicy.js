@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
             </Typography>
 
             <Typography variant="body1" className="text-lg leading-relaxed text-gray-400">
-              För mer information om vår behandling av dina personuppgifter, eller om du vill göra en förfrågan eller lämna ett klagomål, vänligen kontakta oss på [dina kontaktuppgifter]. Vi strävar efter att hantera alla förfrågningar och klagomål snabbt och effektivt.
+              För mer information om vår behandling av dina personuppgifter, eller om du vill göra en förfrågan eller lämna ett klagomål, vänligen kontakta oss på guardia.information@gmail.com. Vi strävar efter att hantera alla förfrågningar och klagomål snabbt och effektivt.
             </Typography>
 
             <Typography variant="body1" className="text-lg leading-relaxed text-gray-400">
@@ -86,3 +86,4 @@ const PrivacyPolicy = () => {
 }
 
 export default PrivacyPolicy;
+
