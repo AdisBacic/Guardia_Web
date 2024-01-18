@@ -6,9 +6,10 @@ import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
+
 const SupportForm = () => {
     const [openSnackbar, setOpenSnackbar] = useState(false);
-    const [alertType, setAlertType] = useState('success');
+    const [alertType, setAlertType] = useState('success'); // Can be 'success', 'info', 'warning', or 'error'
     const [alertMessage, setAlertMessage] = useState('');
 
     const handleSubmit = async (event) => {
@@ -16,8 +17,10 @@ const SupportForm = () => {
 
         const formData = new FormData(event.target);
 
+
+        // https://formspree.io/f/mwkgpjne
         try {
-            const response = await fetch('https://formspree.io/f/mwk', {
+            const response = await fetch('erroerrorerror', {
                 method: 'POST',
                 body: formData,
                 headers: {
@@ -77,7 +80,8 @@ const SupportForm = () => {
                     Skicka
                 </Button>
             </form>
-            <Snackbar open={openSnackbar} autoHideDuration={5000} onClose={handleCloseSnackbar}>
+            <Snackbar open={openSnackbar} anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
+                autoHideDuration={5000} onClose={handleCloseSnackbar}>
                 <Alert onClose={handleCloseSnackbar} variant="filled" severity={alertType} sx={{ width: '100%' }}>
                     {alertMessage}
                 </Alert>

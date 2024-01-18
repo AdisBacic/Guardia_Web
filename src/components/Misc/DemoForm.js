@@ -79,7 +79,8 @@ const DemoForm = () => {
                     Boka demo
                 </Button>
             </form>
-            <Snackbar open={openSnackbar} autoHideDuration={5000} onClose={handleCloseSnackbar}>
+         <Snackbar open={openSnackbar} anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
+                autoHideDuration={5000} onClose={handleCloseSnackbar}>
                 <Alert onClose={handleCloseSnackbar} variant="filled" severity={alertType} sx={{ width: '100%' }}>
                     {alertMessage}
                 </Alert>
