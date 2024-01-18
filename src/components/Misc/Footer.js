@@ -34,17 +34,16 @@ const Footer = () => {
               </ul>
             </div>
             {/* Column 2 */}
-            {/* <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kontakt</h2>
               <ul className="text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://github.com/guardia" className="hover:underline">Github</a>
+                <a href='mailto:info@guardia.nu' className="hover:underline">info@guardia.nu</a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/guardia" className="hover:underline">Discord</a>
                 </li>
               </ul>
-            </div> */}
+            </div>
             {/* Column 3 */}
             <div>
               <h2 className="mb-6 text-sm font-semibold  uppercase text-white">Rättslig</h2>
