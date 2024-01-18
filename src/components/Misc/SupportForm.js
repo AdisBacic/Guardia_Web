@@ -17,10 +17,8 @@ const SupportForm = () => {
 
         const formData = new FormData(event.target);
 
-
-        // https://formspree.io/f/mwkgpjne
         try {
-            const response = await fetch('erroerrorerror', {
+            const response = await fetch('https://formspree.io/f/mwkgpjne', {
                 method: 'POST',
                 body: formData,
                 headers: {
