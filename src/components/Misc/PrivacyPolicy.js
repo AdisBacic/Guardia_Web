@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
           <div className="space-y-8">
 
           <Typography variant="body1" className="text-lg leading-relaxed text-gray-400">
-              Inat AB (organisationsnummer *******-****), har det fulla ansvaret som personuppgiftsansvarig. Det innebär att vi säkerställer att hanteringen av dina personuppgifter sker i enlighet med gällande lagstiftning kring dataskydd, inklusive EU:s dataskyddsförordning 2016/679 och den svenska dataskyddslagen (2018:218), samt enligt de riktlinjer som denna integritetspolicy anger. För frågor, oro eller för att göra anspråk på dina rättigheter, tveka inte att kontakta oss på angivna kontaktvägar.
+          Elyfe AB (559412-3415), har det fulla ansvaret som personuppgiftsansvarig. Det innebär att vi säkerställer att hanteringen av dina personuppgifter sker i enlighet med gällande lagstiftning kring dataskydd, inklusive EU:s dataskyddsförordning 2016/679 och den svenska dataskyddslagen (2018:218), samt enligt de riktlinjer som denna integritetspolicy anger. För frågor, oro eller för att göra anspråk på dina rättigheter, tveka inte att kontakta oss på angivna kontaktvägar.
             </Typography>
 
 
@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
             </Typography>
 
             <Typography variant="body1" className="text-lg leading-relaxed text-gray-400">
-              För mer information om vår behandling av dina personuppgifter, eller om du vill göra en förfrågan eller lämna ett klagomål, vänligen kontakta oss på guardia.information@gmail.com. Vi strävar efter att hantera alla förfrågningar och klagomål snabbt och effektivt.
+              För mer information om vår behandling av dina personuppgifter, eller om du vill göra en förfrågan eller lämna ett klagomål, vänligen kontakta oss på info@guardia.nu. Vi strävar efter att hantera alla förfrågningar och klagomål snabbt och effektivt.
             </Typography>
 
             <Typography variant="body1" className="text-lg leading-relaxed text-gray-400">
