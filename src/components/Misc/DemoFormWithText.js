@@ -12,7 +12,7 @@ const DemoFormWithText = () => {
 
                 <DemoForm />
                 <div className="flex flex-col justify-start p-4 leading-normal w-full md:w-1/2">
-                    <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-white">
+                    <h5 className="text-4xl mt-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500 lg:text-5xl mb-2 mx-auto">
                         Ta första steget mot en enklare vardag med Guardia! 
                     </h5>
                     <p className="mb-3 text-xl md:text-2xl text-gray-400">

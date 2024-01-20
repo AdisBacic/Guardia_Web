@@ -25,7 +25,7 @@ const DownloadCard = () => {
                 assets.forEach(asset => {
                     if (asset.name === "Guardia-1.0.8-arm64-mac.zip" || asset.name === "Guardia-1.0.8-arm64.dmg") {
                         urls.macARM64 = asset.browser_download_url;
-                    } else if (asset.name === "Guardia-Setup-1.0.8.exe") {
+                    } else if (asset.name === "Guardia-Setup-1.1.0.exe") {
                         urls.windows = asset.browser_download_url;
                     } else if (asset.name === "Guardia-1.0.8-mac.zip") {
                         urls.macIntel = asset.browser_download_url;
@@ -52,7 +52,6 @@ const DownloadCard = () => {
     if (error) return <p>Error loading download link.</p>;
 
 
-
     return (
       <div className="flex items-center justify-center w-full h-screen bg-gray-800">
       <div className="cursor-default flex flex-col items-center bg-gray-800 w-full px-4 md:px-0">
@@ -61,7 +60,8 @@ const DownloadCard = () => {
             </Grow>        
 
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4">
-          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+            
+          {/* <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
             <Button
               variant="contained"
               color="secondary"
@@ -70,22 +70,20 @@ const DownloadCard = () => {
             >
               Download for Mac (Intel)
             </Button>
-            </Grow>  
-                
+            </Grow>   */}
 
             <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
-
-            <Button
-              variant="contained"
-              color="primary"
-              startIcon={<LaptopWindowsIcon />}
-              onClick={() => handleDownload('windows')}
-            >
-              Download for Windows
-            </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                startIcon={<LaptopWindowsIcon />}
+                onClick={() => handleDownload('windows')}
+              >
+                Download for Windows
+              </Button>
             </Grow>  
 
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+            {/* <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
             <Button
               variant="contained"
               color="secondary"
@@ -94,7 +92,7 @@ const DownloadCard = () => {
             >
               Download for Mac (ARM64)
             </Button>
-            </Grow>  
+            </Grow>   */}
 
           </div>
         </div>

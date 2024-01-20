@@ -62,11 +62,11 @@ const SupportForm = () => {
             </Typography>
             <form onSubmit={handleSubmit}>
                 <div className="space-y-6">
-                    <TextField InputProps={{ className: 'text-white' }} fullWidth required id="name" name="name" label="Namn" placeholder="Fullständigt namn" variant="outlined" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
-                    <TextField InputProps={{ className: 'text-white' }} fullWidth required id="epost" name="epost" label="Epost" placeholder="din.email@example.com" variant="outlined" type="email" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
-                    <TextField InputProps={{ className: 'text-white' }} fullWidth required id="foretag" name="foretag" label="Företag" placeholder="Företagsnamn" variant="outlined" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
-                    <TextField InputProps={{ className: 'text-white' }} fullWidth required id="telefonnummer" name="telefonnummer" label="Telefonnummer" placeholder="070 123 4567" variant="outlined" type="tel" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
-                    <TextField InputProps={{ className: 'text-white' }} fullWidth required id="meddelande" name="meddelande" label="Meddelande" placeholder="Ditt meddelande" variant="outlined" multiline rows={4} autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
+                    <TextField InputProps={{style: {color: 'white', },}} InputLabelProps={{style: { color: 'white' },}}   fullWidth required id="name" name="name" label="Namn" placeholder="Fullständigt namn" variant="outlined" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
+                    <TextField InputProps={{style: {color: 'white', },}} InputLabelProps={{style: { color: 'white' },}}  fullWidth required id="epost" name="epost" label="Epost" placeholder="din.email@example.com" variant="outlined" type="email" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
+                    <TextField InputProps={{style: {color: 'white', },}} InputLabelProps={{style: { color: 'white' },}}   fullWidth required id="foretag" name="foretag" label="Företag" placeholder="Företagsnamn" variant="outlined" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
+                    <TextField InputProps={{style: {color: 'white', },}} InputLabelProps={{style: { color: 'white' },}}   fullWidth required id="telefonnummer" name="telefonnummer" label="Telefonnummer" placeholder="070 123 4567" variant="outlined" type="tel" autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
+                    <TextField InputProps={{style: {color: 'white', },}} InputLabelProps={{style: { color: 'white' },}}  fullWidth required id="meddelande" name="meddelande" label="Meddelande" placeholder="Ditt meddelande" variant="outlined" multiline rows={4} autoComplete="off" className="bg-gray-600 border-gray-600 focus:border-gray-400 rounded-md" />
                 </div>
 
                 <div className="mb-2">
