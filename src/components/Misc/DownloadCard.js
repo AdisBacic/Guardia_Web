@@ -76,7 +76,7 @@ const DownloadCard = () => {
               startIcon={<AppleIcon />}
               onClick={() => handleDownload('macIntel')}
             >
-              Download for Mac (Intel)
+              Ladda ner för Mac (Intel)
             </Button>
           </Grow>
 
@@ -87,7 +87,7 @@ const DownloadCard = () => {
               startIcon={<LaptopWindowsIcon />}
               onClick={() => handleDownload('windows')}
             >
-              Download for Windows
+              Ladda ner för Windows
             </Button>
           </Grow>
 
@@ -98,7 +98,7 @@ const DownloadCard = () => {
               startIcon={<AppleIcon />}
               onClick={() => handleDownload('macARM64')}
             >
-              Download for Mac (ARM64)
+              Ladda ner för Mac (ARM64)
             </Button>
           </Grow>
 
