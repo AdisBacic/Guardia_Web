@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 
 const Navbar = () => {
-  
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate(); // Initialize the navigate function
 
@@ -14,14 +14,14 @@ const Navbar = () => {
   };
 
   const handleDemoClick = () => {
-    navigate('/demo'); 
+    navigate('/demo');
   };
 
   const pages = [
     { name: 'Användning', path: '/', specialHandle: true },
-    { name: 'Priser', path: '/priser' }, 
+    { name: 'Priser', path: '/priser' },
     { name: 'Support', path: '/support' },
-    // { name: 'Om oss', path: '/omoss' },
+    { name: 'Ladda ner', path: '/download' },
   ];
 
   const handleNavigate = (page) => {
@@ -38,8 +38,8 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-gray-900 to-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-600">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
-        <div 
-          className="flex items-center space-x-0 rtl:space-x-reverse cursor-pointer" 
+        <div
+          className="flex items-center space-x-0 rtl:space-x-reverse cursor-pointer"
           onClick={navigateHome}
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="#77d47e" viewBox="0 0 22 21" style={{ width: '45px', height: '64px' }}>
@@ -77,25 +77,25 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`items-center justify-between ${isMenuOpen ? 'flex w-full' : 'hidden'} md:flex md:w-auto md:order-1`} id="navbar-sticky">
-  <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700 w-full md:w-auto">
-    {pages.map((page) => (
-      <li key={page.name}>
-        <button
-          onClick={() => {
-            if (page.specialHandle) {
-              handleNavigate({ name: 'Användingsområden' });
-            } else {
-              navigate(page.path);
-            }
-          }}
-          className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:hover:text-blue-800 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-        >
-          {page.name}
-        </button>
-      </li>
-    ))}
-  </ul>
-</div>
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700 w-full md:w-auto">
+            {pages.map((page) => (
+              <li key={page.name}>
+                <button
+                  onClick={() => {
+                    if (page.specialHandle) {
+                      handleNavigate({ name: 'Användingsområden' });
+                    } else {
+                      navigate(page.path);
+                    }
+                  }}
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:hover:text-blue-800 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
+                >
+                  {page.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </nav>
   );

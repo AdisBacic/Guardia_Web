@@ -7,61 +7,69 @@ import DownloadHeroSection from './DownloadHeroSection';
 
 
 const DownloadCard = () => {
-    const [downloadUrls, setDownloadUrls] = useState({
-        macIntel: '',
-        windows: '',
-        macARM64: '',
-    });
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
+  const [downloadUrls, setDownloadUrls] = useState({
+    macIntel: '',
+    windows: '',
+    macARM64: '',
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-    useEffect(() => {
-        setIsLoading(false);
-        fetch('https://api.github.com/repos/Eftiand/Guardia-Release/releases/latest')
-            .then(response => response.json())
-            .then(data => {
-                const assets = data.assets;
-                let urls = {};
-                assets.forEach(asset => {
-                    if (asset.name === "Guardia-1.0.8-arm64-mac.zip" || asset.name === "Guardia-1.0.8-arm64.dmg") {
-                        urls.macARM64 = asset.browser_download_url;
-                    } else if (asset.name === "Guardia-Setup-1.1.0.exe") {
-                        urls.windows = asset.browser_download_url;
-                    } else if (asset.name === "Guardia-1.0.8-mac.zip") {
-                        urls.macIntel = asset.browser_download_url;
-                    }
-                });
-                setDownloadUrls(urls);
-            })
-            .catch(err => {
-                console.error('Error fetching the latest release:', err);
-                setError(err);
-            })
-            .finally(() => setIsLoading(false));
-    }, []);
+  useEffect(() => {
+    setIsLoading(true);
+    fetch('https://api.github.com/repos/Eftiand/Guardia-Release/releases/latest')
+      .then(response => response.json())
+      .then(data => {
+        const assets = data.assets;
+        let urls = { macIntel: '', windows: '', macARM64: '' };
+        
+        assets.forEach(asset => {
+          if (asset.name.match(/.*-mac\.zip$/)) {
+            urls.macIntel = asset.browser_download_url;
+          } else if (asset.name.match(/.*-Setup-.*\.exe$/)) {
+            urls.windows = asset.browser_download_url;
+          } else if (asset.name.match(/.*-arm64-mac\.zip$/) || asset.name.match(/.*-arm64\.dmg$/)) {
+            urls.macARM64 = asset.browser_download_url;
+          }
+        });
+        setDownloadUrls(urls);
+      })
+      .catch(err => {
+        console.error('Error fetching the latest release:', err);
+        setError(err);
+      })
+      .finally(() => setIsLoading(false));
+  }, []);
 
-    const handleDownload = (platform) => {
-        if (downloadUrls[platform]) {
-            window.open(downloadUrls[platform], '_blank');
-        } else {
-            console.log(`Download URL for ${platform} not found`);
-        }
-    };
+  const handleDownload = (platform) => {
+    if (downloadUrls[platform]) {
+      const link = document.createElement('a');
+      link.href = downloadUrls[platform];
+      link.style.display = 'none';
+      link.setAttribute('download', '');
+      document.body.appendChild(link);
+  
+      link.click();
+  
+      document.body.removeChild(link);
+    } else {
+      console.log(`Download URL for ${platform} not found`);
+    }
+  };
+  
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error loading download link.</p>;
 
-    if (isLoading) return <p>Loading...</p>;
-    if (error) return <p>Error loading download link.</p>;
-
-
-    return (
-      <div className="flex items-center justify-center w-full h-screen bg-gray-800">
+  return (
+    <div className="flex items-center justify-center w-full h-screen bg-gray-800">
       <div className="cursor-default flex flex-col items-center bg-gray-800 w-full px-4 md:px-0">
-          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
-            <div><DownloadHeroSection /></div>
-            </Grow>        
+        <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
+          <div><DownloadHeroSection /></div>
+        </Grow>
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4">
-            
-          {/* <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 my-4">
+
+          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
             <Button
               variant="contained"
               color="secondary"
@@ -70,20 +78,20 @@ const DownloadCard = () => {
             >
               Download for Mac (Intel)
             </Button>
-            </Grow>   */}
+          </Grow>
 
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
-              <Button
-                variant="contained"
-                color="primary"
-                startIcon={<LaptopWindowsIcon />}
-                onClick={() => handleDownload('windows')}
-              >
-                Download for Windows
-              </Button>
-            </Grow>  
+          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<LaptopWindowsIcon />}
+              onClick={() => handleDownload('windows')}
+            >
+              Download for Windows
+            </Button>
+          </Grow>
 
-            {/* <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
+          <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={2000}>
             <Button
               variant="contained"
               color="secondary"
@@ -92,11 +100,11 @@ const DownloadCard = () => {
             >
               Download for Mac (ARM64)
             </Button>
-            </Grow>   */}
+          </Grow>
 
-          </div>
         </div>
       </div>
+    </div>
   );
 }
 export default DownloadCard;  
