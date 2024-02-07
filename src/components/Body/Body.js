@@ -1,4 +1,4 @@
-import { MemoryRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import MainWindow from '../Views/MainWindow';
 import DemoWindow from '../Views/DemoWindow';
 import PriceWindow from '../Views/PriceWindow';
