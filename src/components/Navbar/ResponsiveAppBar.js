@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

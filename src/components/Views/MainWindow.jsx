@@ -6,7 +6,7 @@ import Maincard from '../Misc/Maincard'; // adjust the path as necessary
 import MiddleSection from '../Misc/MiddleSection';
 import Footer from '../Misc/Footer';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import IntroVideo from '../Misc/IntroVideo';
 
 const MainWindow = () => {
@@ -33,10 +33,10 @@ const MainWindow = () => {
 
   //handle navigation to specific route 
   
+const nav = useNavigate();
  const handleNavClick = () => {
-    window.location.href = '/confirmOrder/';
-  }
-
+    nav('/confirmOrder/');
+  };
 
   return (
     <>
