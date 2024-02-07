@@ -22,6 +22,7 @@ const Navbar = () => {
     { name: 'Priser', path: '/priser' },
     { name: 'Support', path: '/support' },
     { name: 'Ladda ner', path: '/download' },
+    { name: 'Användingsområden', path: '/confirmOrder' },
   ];
 
   const handleNavigate = (page) => {
