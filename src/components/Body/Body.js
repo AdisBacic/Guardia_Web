@@ -24,7 +24,7 @@ const RoutesContent = () => {
       <Route path="/priser" element={<PriceWindow />} />
       <Route path="/support" element={<SupportWindow />} />
       <Route path="/privacypolicy" element={<PrivacyPolicyWindow />} />
-      <Route path="/validateOrder/" element={<OrderConfirmation />} />
+      <Route path="/confirmOrder/" element={<OrderConfirmation />} />
     </Routes>
   );
 };
