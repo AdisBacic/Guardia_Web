@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Button, CircularProgress, Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Button, CircularProgress, LinearProgress, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import GppBadIcon from '@mui/icons-material/GppBad';
 import GppMaybeIcon from '@mui/icons-material/GppMaybe';
+
+
+
 
 const OrderConfirmation = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
@@ -14,7 +18,7 @@ const OrderConfirmation = () => {
     setTimeout(() => {
       console.log('Initial loading done');
       parseUrlAndAuthenticate();
-    }, 3000); 
+    }, 1000); 
   }, []);
 
   const parseUrlAndAuthenticate = () => {
@@ -26,9 +30,6 @@ const OrderConfirmation = () => {
         orderId = hashParts[2].split('=')[1];
       }
     }
-  
-    console.log('Token:', token);
-    console.log('Order ID:', orderId);
   
     if (!token || !orderId) {
       console.error('Token or Order ID missing');
@@ -96,15 +97,31 @@ const OrderConfirmation = () => {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <CircularProgress color="inherit" />
-        <Typography variant="body1">Laddar...</Typography>
+      <div className="flex flex-col items-center bg-gradient-to-r from-gray-700 to-gray-900 justify-center min-h-screen">
+       <div className="mb-4 w-1/2">
+      <LinearProgress 
+        sx={{
+          '& .MuiLinearProgress-bar': {
+            backgroundColor: 'white', // Sets the progress bar color to white
+          },
+          '& .MuiLinearProgress-colorPrimary': {
+            backgroundColor: 'rgba(255, 255, 255, 0.3)', // Optional: Sets a lighter white for the background of the progress bar
+          }
+        }}
+      />
+    </div>
       </div>
     );
   }
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-gradient-to-r from-gray-700 to-gray-900 p-5">
-     <div className="text-center p-8 bg-white rounded-lg shadow-xl">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { type: "spring", duration: 1.5, delay: 0.6 } }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center"
+        >
+     <div className="text-center p-8 bg-gradient-to-r from-gray-300 to-gray-300 rounded-lg shadow-xl">
      {isAlreadyAuthenticated ? (
         <>
         <motion.div
@@ -203,6 +220,7 @@ const OrderConfirmation = () => {
         </>
       )}
       </div>
+      </motion.div>
     </div>
   );
 };
