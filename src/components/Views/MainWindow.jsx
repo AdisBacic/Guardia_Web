@@ -29,30 +29,17 @@ const MainWindow = () => {
     } else {
       window.scrollTo(0, 0);
     }
-  }, [location]); 
-
-  //handle navigation to specific route 
-  
-const nav = useNavigate();
- const handleNavClick = () => {
-    nav('/confirmOrder/');
-  };
+  }, [location]);   
 
   return (
     <>
     {/* <SimpleSnackbar /> */}
 
-   
-
       <div className="flex flex-col min-h-screen">
         <ResponsiveAppBar />
-    
         <Maincard />
         <MiddleSection />
         <Footer />
-        <button onClick={handleNavClick}>
-      click
-    </button>
       </div>
       
 
