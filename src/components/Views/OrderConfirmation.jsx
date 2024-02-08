@@ -130,7 +130,7 @@ const OrderConfirmation = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <GppMaybeIcon color="success" style={{ fontSize: '84px', marginBottom: '22px' }} />
+          <GppMaybeIcon color="warning" style={{ fontSize: '84px', marginBottom: '22px' }} />
           </motion.div>
           <motion.div
           initial={{ opacity: 0, y: 100 }}

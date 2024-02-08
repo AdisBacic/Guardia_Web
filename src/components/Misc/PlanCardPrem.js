@@ -3,7 +3,7 @@ import React from 'react';
 const PlanCard = () => {
   return (
     <div className="w-full max-w-sm p-4 rounded-lg shadow sm:p-8 bg-gray-800 border border-gray-700">
-      <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Premium plan</h5>
+      <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Premiumplan</h5>
       <div className="flex items-baseline text-white">
         <span className="text-3xl font-semibold"></span>
         <span className="text-5xl font-extrabold tracking-tight">1990:-</span>
