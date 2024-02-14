@@ -26,7 +26,7 @@ const DemoForm = () => {
             });
 
             if (response.ok) {
-                setAlertMessage('Tack! Vi kommer att kontakta dig för att boka in en tid för din demo!');
+                setAlertMessage('Tack för din förfrågan! Vi hör av oss snart för att schemalägga en tid för din demonstration!');
                 setAlertType('success');
                 setOpenSnackbar(true);
                 document.getElementById("name").value = "";

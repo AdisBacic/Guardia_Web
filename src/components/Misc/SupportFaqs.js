@@ -26,7 +26,7 @@ const faqs = [
 
 const SupportFaqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const navigate = useNavigate();
 
   const toggle = index => {
     if (openIndex === index) {
@@ -37,7 +37,7 @@ const SupportFaqs = () => {
   };
 
   const handleDemoClick = () => {
-    navigate('/demo'); // Programmatically navigate to the "/demo" route
+    navigate('/demo'); 
   };
 
   return (
@@ -66,7 +66,6 @@ const SupportFaqs = () => {
             </button>
           </h2>
 
-          {/* Wrap the accordion body with the Grow component */}
           <Grow in={openIndex === index} style={{ transformOrigin: '0 0 0' }} timeout={500}>
             <div
               id={`accordion-flush-body-${index}`}
