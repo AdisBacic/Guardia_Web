@@ -11,15 +11,15 @@ const CarouselItem = ({ image, title, description }) => (
         <div className="w-full lg:max-w-xl xl:max-w-2xl mb-0 xl:pb-60 2xl:max-w-2xl 2xl:pb-60  mx-auto">
             <img src={image} alt="carousel-item" className="w-full h-full object-cover rounded-lg transition duration-500 ease-in-out transform hover:scale-105" />
         </div>
-        {/* Text container */}
-        <div className="absolute w-full h-full top-0 left-0 p-4 flex items-center justify-center">
-            <div className="text-white text-center sm:mt-0 lg:mt-10 xl:mt-80 2xl:mt-25">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">{title}</h2>
-                <p className="text-sm sm:text-base md:text-lg">{description}</p>
+                {/* Text container */}
+                <div className="absolute w-full h-full top-0 left-0 p-4 flex items-center justify-center bg-black bg-opacity-50 md:bg-transparent md:bg-opacity-100">
+                    <div className="text-white text-center sm:mt-0 lg:mt-10 xl:mt-80 2xl:mt-25">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">{title}</h2>
+                        <p className="text-sm sm:text-base md:text-lg">{description}</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-);
+        );
 
 
 const MyCarousel = () => {
