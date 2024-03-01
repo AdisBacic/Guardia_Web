@@ -7,7 +7,7 @@ const PriceHeroSection = () => {
         Spara <span className="text-indigo-500">Tid</span> och <span className="text-indigo-500">Pengar</span>  
       </h1>
       <p className="mx-auto max-w-2xl text-lg font-medium text-gray-400">
-        Nyckelhantering med Guardia kostar från 295 kr i månaden och 0 kr per användare. Inga start- eller uppstartsavgifter tillkommer. Inga bindningstider. Pengarna tillbaka om du inte är nöjd inom 30 dagar.
+        Nyckelhantering med Guardia kostar från 495 kr i månaden och 0 kr per användare. Inga start- eller uppstartsavgifter tillkommer. Inga bindningstider. Pengarna tillbaka om du inte är nöjd inom 30 dagar.
      </p>
     </div>
   );
