@@ -51,7 +51,7 @@ const IntroToGuardia = () => {
       )}
       <Container className="top-1/4 relative rounded-xl pb-10">
         <div className="flex h-[80vh]">
-          <div className="text-white w-full lg:w-2/3">
+          <div className="text-white w-full lg:w-4/5">
             <h1 className="text-4xl font-poppins-medium pb-8">
               Gör det enkelt att följa{" "}
               <span className="bg-gradient-to-r from-green-600 to-green-900 bg-clip-text text-transparent">
