@@ -49,20 +49,20 @@ const IntroToGuardia = () => {
           </div>
         </>
       )}
-      <Container className="top-1/4 relative  rounded-xl">
+      <Container className="top-1/4 relative rounded-xl pb-10">
         <div className="flex h-[50vh]">
-          <div className="text-white w-full lg:w-2/3 ">
+          <div className="text-white w-full lg:w-2/3">
             <h1 className="text-4xl font-poppins-medium pb-8">
               Gör det enkelt att följa{" "}
               <span className="bg-gradient-to-r from-green-600 to-green-900 bg-clip-text text-transparent">
                 GDPR
               </span>{" "}
-              , Förändra ditt sätt att hantera data idag!
+              , förändra ditt sätt att hantera data idag!
             </h1>
             <p className="text-gray-400 font-poppins-light pb-8">
-              Framtiden inom hantering av nycklar och värdefulla tillgångar.
-              GDPR-kompatibel och säker. Säkerställer korrekt behandling av
-              känslig data.
+              Simpel och effektiv hantering av nycklar och värdefulla tillgångar. Kämpar ditt företag med pappersarbete, att följa GDPR-förordningar och rutin i det vardagliga arbetet? 
+              Guardia erbjuder en enkel webblösning eller app för att administrera utlåning och inlämning av artiklar. Automatisera processen och följ GDPR-förordningar med enkelhet. <br />
+              Det ska vara enkelt att göra rätt.
             </p>
 
             <NavLink to="/demo" className="pr-2">
@@ -80,7 +80,7 @@ const IntroToGuardia = () => {
           <img
             src={shieldImg}
             alt="Guardia"
-            className="hidden lg:block absolute -right-60 -bottom-0 h-full"
+            className="hidden lg:block absolute -right-60 -bottom-0 h-full "
           />
         </div>
       </Container>

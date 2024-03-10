@@ -9,7 +9,7 @@ const MainWindow = () => {
     <>
       {/* <SimpleSnackbar /> */}
 
-      <div className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden">
+      <div className="flex flex-col h-screen overflow-x-hidden overflow-y-auto">
         <ResponsiveAppBar />
         <IntroToGuardia />
       </div>
