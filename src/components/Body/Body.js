@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainWindow from '../Views/MainWindow';
 import DemoWindow from '../Views/DemoWindow';
 import PriceWindow from '../Views/PriceWindow';
@@ -24,7 +24,7 @@ const RoutesContent = () => {
       <Route path="/priser" element={<PriceWindow />} />
       <Route path="/support" element={<SupportWindow />} />
       <Route path="/privacypolicy" element={<PrivacyPolicyWindow />} />
-      <Route path="/confirmOrder/" element={<OrderConfirmation />} />
+      <Route path="/confirmOrder" element={<OrderConfirmation />} />
     </Routes>
   );
 };

@@ -15,8 +15,8 @@ import IntroVideo from './IntroVideo';
 const Maincard = () => {
     return (
 
-        <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-10">
-            <div className="cursor-default flex flex-col items-center border border-gray-700 bg-gray-800 w-full">
+        <div className="flex items-center justify-center mt-16 md:mt-24 lg:mt-10">
+            <div className="cursor-default flex flex-col items-center w-full">
                 <Container maxWidth="xl">
 
                     <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
