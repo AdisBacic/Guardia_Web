@@ -37,37 +37,21 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-20 top-0 start-0 bg-[#090A0F]">
-      <div className="flex flex-wrap items-center mx-auto p-4 border">
+      <div className="flex flex-wrap md:flex-row mx-auto p-4 border justify-between">
         <div
-          className="flex items-center space-x-0 cursor-pointer border"
+          className="flex items-right space-x-0 cursor-pointer"
           onClick={navigateHome}
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="#77d47e" viewBox="0 0 21 18" className='w-7 h-7 pl-1'>
             <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.560c1.11.300 2.229.655 2.887.870a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.990a11.775 11.775 0 0 1-2.517 2.453a7.159 7.159 0 0 1-1.048.625c-.280.132-.581.240-.829.240s-.548-.108-.829-.240a7.158 7.158 0 0 1-1.048-.625a11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692a1.54 1.54 0 0 1 1.044-1.262a62.456 62.456 0 0 1 2.185-.870z" />
           </svg>
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white px-1">Guardia</span>
+          <span className="text-xl font-semibold whitespace-nowrap text-white px-1">Guardia</span>
         </div>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          {/* <Button
-            size="small"
-            variant="contained"
-            className='rounded-full'
-            startIcon={<PlayArrowIcon />}
-            sx={{
-              ml: { xs: 0.1, md: 2 },
-              p: { xs: 0.5, md: 2 },
-            }}
-            color="success"
-            onClick={handleDemoClick}
-          >
-            Boka Demo
-          </Button> */}
+
+        <div className="md:hidden" style={{ position: 'fixed', right: 10 }}>
           <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
             onClick={toggleMenu}
-            className="inline-flex border items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-            aria-controls="navbar-sticky"
+            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-700 focus:outline-none"
             aria-expanded={isMenuOpen ? 'true' : 'false'}
           >
             <span className="sr-only">Open main menu</span>
@@ -76,10 +60,10 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={`items-center border ${isMenuOpen ? 'flex w-full' : 'hidden'} md:flex md:w-auto md:order-1`} id="navbar-sticky">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700 w-full md:w-auto">
+        <div className={`flex-grow ${isMenuOpen ? 'flex' : 'hidden'} md:flex ${isMenuOpen ? 'justify-start' : 'justify-end'}`} id="navbar-sticky">
+          <ul className={`flex flex-col p-4 mt-4 md:flex-row  md:mt-0 md:p-0 ${isMenuOpen ? 'text-left' : 'md:text-left'}`}>
             {pages.map((page) => (
-              <li key={page.name}>
+              <li key={page.name} className="">
                 <button
                   onClick={() => {
                     if (page.specialHandle) {
@@ -87,8 +71,7 @@ const Navbar = () => {
                     } else {
                       navigate(page.path);
                     }
-                  }}
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-green-700 hover:text-white hover:transition-colors duration-300 md:hover:bg-transparent md:p-0 md:hover:text-blue-800 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
+                  }} className="block py-2 px-3 text-white rounded hover:bg-green-700 hover:text-white md:hover:bg-transparent md:border-0"
                 >
                   {page.name}
                 </button>
