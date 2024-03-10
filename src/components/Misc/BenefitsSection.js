@@ -2,7 +2,7 @@ import React from 'react';
 
 const BenefitsSection = () => {
   return (
-    <div className="p-4  rounded-lg md:p-8 bg-gray-800" id="benefits" role="tabpanel" aria-labelledby="benefits-tab">
+    <div className="p-4  rounded-lg md:p-8" id="benefits" role="tabpanel" aria-labelledby="benefits-tab">
       <h2 className="mb-5 text-2xl font-extrabold tracking-tight text-white">Kontroll</h2>
       <ul role="list" className="space-y-4 text-gray-400">
         <li className="flex space-x-2 rtl:space-x-reverse items-center">

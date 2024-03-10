@@ -1,10 +1,8 @@
 import React from "react";
 import ResponsiveAppBar from "../Navbar/ResponsiveAppBar"; // adjust the path as necessary
-import Maincard from "../Misc/Maincard"; // adjust the path as necessary
-import MiddleSection from "../Misc/MiddleSection";
-import Footer from "../Misc/Footer";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import IntroToGuardia from "../Misc/IntroToGuardia";
 
 const MainWindow = () => {
   const location = useLocation();
@@ -31,11 +29,9 @@ const MainWindow = () => {
     <>
       {/* <SimpleSnackbar /> */}
 
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col h-screen overflow-x-hidden overflow-y-hidden">
         <ResponsiveAppBar />
-        <Maincard />
-        <MiddleSection />
-        <Footer />
+        <IntroToGuardia />
       </div>
     </>
   );
