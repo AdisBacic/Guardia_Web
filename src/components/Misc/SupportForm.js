@@ -56,7 +56,7 @@ const SupportForm = () => {
     };
 
     return (
-        <Box className="max-w-xs mx-auto p-4 sm:p-8 bg-gradient-to-r from-gray-700 to-gray-800 text-white border border-gray-900 rounded-xl shadow-2xl sm:max-w-lg">
+        <Box className="max-w-xs mx-auto p-4 sm:p-8 bg-gradient-to-r from-gray-800 to-silver-900 text-white border border-gray-900 rounded-xl shadow-2xl sm:max-w-lg">
             <Typography variant="h5" component="h2" gutterBottom className="text-center mb-8 text-white font-semibold">
                 Vad kan vi hjälpa dig med?
             </Typography>

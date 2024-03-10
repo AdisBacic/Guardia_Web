@@ -2,7 +2,7 @@ import React from 'react';
 
 const PlanCardBasic = () => {
   return (
-    <div className="w-full max-w-sm p-4 border border-gray-200 rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700">
+    <div className="w-full max-w-sm p-4 border border-gray-200 rounded-lg shadow sm:p-8 bg-[#090A0F] border-gray-700">
       <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standardplan</h5>
       <div className="flex items-baseline text-white">
         <span className="text-3xl font-semibold"></span>

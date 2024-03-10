@@ -11,7 +11,7 @@ const SupportFormWithText = () => {
                 <SupportForm />
 
                 <div className="flex flex-col justify-start p-4 leading-normal w-full md:w-1/2">
-                    <h4 className="text-2xl mt-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500 lg:text-3xl mx-auto">
+                    <h4 className="text-2xl text-center mt-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500 lg:text-3xl mx-auto">
                         Vanliga Frågor och Information
                     </h4>
                     <div className="w-1/2 mx-auto mt-10 mb-10">

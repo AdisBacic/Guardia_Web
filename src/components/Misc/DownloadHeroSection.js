@@ -2,7 +2,7 @@ import React from 'react';
 
 const DownloadHeroSection = () => {
   return (
-    <div className="text-center py-20 bg-gray-800">
+    <div className="text-center py-20 bg-[#090A0F]">
        <h1 className="mb-4 text-3xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl">
         Ladda ner <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Guardia</span>
       </h1>

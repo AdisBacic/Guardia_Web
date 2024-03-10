@@ -61,8 +61,8 @@ const DownloadCard = () => {
   if (error) return <p>Error loading download link.</p>;
 
   return (
-    <div className="flex items-center justify-center w-full h-screen bg-gray-800">
-      <div className="cursor-default flex flex-col items-center bg-gray-800 w-full px-4 md:px-0">
+    <div className="flex items-center justify-center w-full h-screen bg-[#090A0F]">
+      <div className="cursor-default flex flex-col items-center bg-[#090A0F] w-full px-4 md:px-0">
         <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
           <div><DownloadHeroSection /></div>
         </Grow>

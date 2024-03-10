@@ -12,7 +12,7 @@ const Footer = () => {
   };
   
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-[#090A0F]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -35,8 +35,8 @@ const Footer = () => {
             </div>
             {/* Column 2 */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kontakt</h2>
-              <ul className="text-gray-500 dark:text-gray-400">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Kontakt</h2>
+              <ul className="text-gray-400">
                 <li className="mb-4">
                 <a href='mailto:info@guardia.nu' className="hover:underline">info@guardia.nu</a>
                 </li>

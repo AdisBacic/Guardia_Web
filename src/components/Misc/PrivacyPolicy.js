@@ -5,7 +5,7 @@ import { Container, Typography } from '@mui/material';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="flex flex-col flex-grow bg-gray-800 py-20 text-white mt-12">
+    <div className="flex flex-col flex-grow bg-[#090A0F] py-20 text-white mt-12">
       <Container className="container mx-auto px-6">
         <Typography variant="h4" className=" font-bold pb-12 text-center">Integritetspolicy</Typography>
 

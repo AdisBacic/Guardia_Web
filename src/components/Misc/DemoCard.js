@@ -7,8 +7,8 @@ import DemoHeroSection from './DemoHeroSection';
 const DemoCard = () => {
     return (
 
-        <div className="bg-gray-100  flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
-            <div className="cursor-default flex flex-col items-center border-gray-700 bg-gray-800 w-full">
+        <div className="bg-[#090A0F] flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
+            <div className="cursor-default flex flex-col items-center border-gray-700 bg-[#090A0F] w-full">
                 <Grow in={true} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
                     <div><DemoHeroSection /></div>
                 </Grow>
