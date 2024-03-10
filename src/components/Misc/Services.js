@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesSection = () => {
   return (
-    <div className="p-4 rounded-lg md:p-8 bg-gray-800" id="services" role="tabpanel" aria-labelledby="services-tab">
+    <div className="p-4 rounded-lg md:p-8 bg-[#090A0F]" id="services" role="tabpanel" aria-labelledby="services-tab">
       <h2 className="mb-5 text-2xl font-extrabold tracking-tight text-white">Modernisering</h2>
       <ul role="list" className="space-y-4 text-gray-400">
         <li className="flex space-x-2 rtl:space-x-reverse items-center">

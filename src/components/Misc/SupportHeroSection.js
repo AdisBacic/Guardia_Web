@@ -3,7 +3,7 @@ import React from 'react';
 
 const SupportHeroSection = () => {
   return (
-    <div className="text-center py-20 bg-gray-00">
+    <div className="text-center py-20 bg-[#090A0F]">
       <h1 className="mb-6 text-4xl font-bold text-indigo-200 lg:text-5xl">
         Frågor <span className="text-indigo-500">Funderingar</span> eller <span className="text-indigo-500">Problem?</span>
       </h1>

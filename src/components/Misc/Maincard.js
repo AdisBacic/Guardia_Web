@@ -10,11 +10,12 @@ import Grow from "@mui/material/Grow";
 import Slide from "@mui/material/Slide";
 import Fade from "@mui/material/Fade";
 import Container from "@mui/material/Container";
-import IntroVideo from "./IntroVideo";
+
 
 const Maincard = () => {
   return (
-    <div className="flex items-center justify-center mt-16 md:mt-24 lg:mt-10">
+    <>
+    <div className="flex items-center justify-center mt-16 md:mt-24 lg:mt-10 bg-[#090A0F]">
       <div className="cursor-default flex flex-col items-center w-full">
         <Container maxWidth="xl">
           <Grow in={true} style={{ transformOrigin: "0 0 0" }} timeout={1000}>
@@ -23,7 +24,7 @@ const Maincard = () => {
             </div>
           </Grow>
 
-          <div className="w-full">
+          <div className="w-full ">
             <BenefitsCard />
             <HowItWorksCard />
           </div>
@@ -33,7 +34,7 @@ const Maincard = () => {
               <h5 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-white">
                 GDPR och personuppgifter
               </h5>
-              <p className="mb-3 text-xl md:text-2xl text-gray-400">
+              <p className="mb-3 text-xl md:text-2xl text-gray-400 ">
                 På Guardia tar vi säkerheten och integriteten för våra
                 användares personliga information på stort allvar. Därför har vi
                 infört strikta åtgärder för att säkerställa att all känslig data
@@ -59,7 +60,8 @@ const Maincard = () => {
           </Fade>
         </Container>
       </div>
-    </div>
+    </div>    
+    </>
   );
 };
 

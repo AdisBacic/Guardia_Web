@@ -2,7 +2,7 @@ import React from 'react';
 
 const PriceHeroSection = () => {
   return (
-    <div className="text-center py-20 bg-gray-00">
+    <div className="text-center py-20 bg-[#090A0F]">
       <h1 className="mb-6 text-4xl font-bold text-indigo-200 dark:text-indigo-200 lg:text-5xl">
         Spara <span className="text-indigo-500">Tid</span> och <span className="text-indigo-500">Pengar</span>  
       </h1>

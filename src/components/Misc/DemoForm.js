@@ -54,7 +54,7 @@ const DemoForm = () => {
     };
 
     return (
-        <Box className="max-w-xs mx-auto p-4 sm:p-8 bg-gradient-to-r from-gray-700 to-silver-300 text-white border border-gray-900 rounded-xl sm:max-w-lg shadow-silver">
+        <Box className="max-w-xs mx-auto p-4 sm:p-8 bg-gradient-to-r from-gray-700 to--300 text-white border border-gray-900 rounded-xl sm:max-w-lg shadow-silver">
             <Typography variant="h5" component="h2" gutterBottom className="text-center mb-8 text-white font-semibold">
                 Boka ett personligt demo
             </Typography>

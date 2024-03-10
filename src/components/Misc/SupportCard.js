@@ -7,7 +7,7 @@ import SupportFormWithText from './SupportFormWithText';
 
 const SupportCard = () => {
     return (
-        <div className="bg-gray-100 flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
+        <div className="bg-[#090A0F] flex items-center justify-center mt-16 md:mt-24 lg:mt-30">
             <div className="cursor-default flex flex-col items-center border-gray-700 bg-[#090A0F] w-full">
                 
                 

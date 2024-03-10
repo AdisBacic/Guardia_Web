@@ -4,7 +4,7 @@ import './assets/main.scss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header bg-[#090A0F] text-white">
+      <header className="App-header bg-[#090A0F] text-white font-poppins-light">
         <Body />
       </header>
     </div>

@@ -11,8 +11,8 @@ const MiddleSection = () => {
     };
 
     return (
-        <div className="bg-gray-100 flex items-center justify-center flex-col">
-            <div href="" className="cursor-default flex flex-col items-center  border border-gray-700 bg-gray-800 w-full">
+        <div className="bg-[#090A0F] flex items-center justify-center flex-col">
+            <div href="" className="cursor-default flex flex-col items-center  border border-gray-700 bg-[#090A0F] w-full">
                 <Container maxWidth="xl">
 
                     <div className="flex flex-col justify-between p-4 leading-normal mb-20">

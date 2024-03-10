@@ -6,6 +6,7 @@ import SupportWindow from '../Views/SupportWindow';
 import PrivacyPolicyWindow from '../Views/PrivacyPolicyWindow';
 import DownloadWindow from '../Views/DownloadWindow';
 import OrderConfirmation from '../Views/OrderConfirmation';
+import MoreInfoWindow from '../Views/MoreInfoWindow';
 
 const Body = () => {
   return (
@@ -19,6 +20,7 @@ const RoutesContent = () => {
   return (
     <Routes>
       <Route path="/" element={<MainWindow />} />
+      <Route path="/moreinfo" element={<MoreInfoWindow />} />
       <Route path="/demo" element={<DemoWindow />} />
       <Route path="/download" element={<DownloadWindow />} />
       <Route path="/priser" element={<PriceWindow />} />

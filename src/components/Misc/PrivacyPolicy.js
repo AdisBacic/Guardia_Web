@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <Container className="container mx-auto px-6">
         <Typography variant="h4" className=" font-bold pb-12 text-center">Integritetspolicy</Typography>
 
-        <div className="bg-gray-900 p-12 rounded-xl shadow-lg space-y-8">
+        <div className="bg-[#090A0F] p-12 rounded-xl shadow-lg space-y-8">
 
           <Typography variant="h6" className="text-2xl leading-relaxed text-gray-300">
           På Guardia värderar vi din integritet och strävar efter att du ska känna dig trygg med hur vi hanterar dina personuppgifter. Denna policy beskriver hur och varför vi samlar in, lagrar, använder och delar dina personuppgifter, samt dina rättigheter i relation till dina uppgifter.

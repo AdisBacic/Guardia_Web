@@ -25,7 +25,7 @@ const Navbar = () => {
 
   const handleNavigate = (page) => {
     if (page.name === "Användingsområden") {
-      navigate("/?scrollTo=anvandingsomraden");
+      navigate("/moreinfo/?scrollTo=anvandingsomraden");
     } else {
       navigate(page.path);
     }

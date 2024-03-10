@@ -5,12 +5,17 @@ import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 
 const IntroToGuardia = () => {
+
+  
+
+
+
   return (
     <Container className="top-1/4 relative  rounded-xl">
       <div className="flex h-[50vh]">
         <div className="text-white w-full lg:w-2/3 ">
           <h1 className="text-4xl font-poppins-medium pb-8">
-            <span className="bg-gradient-to-r from-green-600 to-green-900 bg-clip-text text-transparent">Guardia</span> the easiest way to be GDPR compliant, Revoutionalize how you
+            The easiest way to be <span className="bg-gradient-to-r from-green-600 to-green-900 bg-clip-text text-transparent">GDPR</span> compliant, Revoutionalize how you
             dhtin
           </h1>
           <p className="text-gray-400 font-poppins-light pb-8">
@@ -18,14 +23,14 @@ const IntroToGuardia = () => {
             and valuable assets, with full respect for GDPR. Ensure that all
             sensitive information is handled correctly.
           </p>
-          <NavLink className="pr-2">
+          <NavLink  to="/demo" className="pr-2">
             <Button variant="contained" className="bg-gradient-to-r from-green-600 to-green-900 rounded-none">Boka ett demo</Button>
           </NavLink>
-          <NavLink>
-            <Button variant="outlined">Läs mer</Button>
+          <NavLink to="/moreinfo">
+            <Button   variant="outlined">Läs mer</Button>
           </NavLink>
         </div>
-        <img src={shieldImg} alt="Guardia" className="hidden lg:block absolute -right-40 -bottom-40 h-full" />
+        <img src={shieldImg} alt="Guardia" className="hidden lg:block absolute -right-20 -bottom-0 h-full" />
       </div>
     </Container>
   );
