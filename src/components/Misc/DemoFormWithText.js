@@ -15,7 +15,8 @@ const DemoFormWithText = () => {
                     <h5 className="text-4xl mt-10 font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-200 to-indigo-500 lg:text-5xl mb-2 mx-auto">
                         Ta första steget mot en enklare vardag med Guardia! 
                     </h5>
-                    <p className="mb-3 text-xl md:text-2xl text-gray-400">
+
+                    <p className="mb-3  max-w-2xl lg:text-xl xs:text-xs text-gray-400 sm:text-base md:text-lg">
                         Upplev den smidighet och effektivitet vi erbjuder. Ingen bindningstid, vid priser som börjar på endast 495 kr/mån. Börja din resa mot enklare hantering redan idag!
                     </p>
                 </div>
