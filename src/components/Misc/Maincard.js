@@ -7,7 +7,6 @@ import TimeSavingSection from "./TimeSavingSecion";
 import BenefitsCard from "./BenefitsCard";
 import HowItWorksCard from "./HowItWorksCard";
 import Grow from "@mui/material/Grow";
-import Slide from "@mui/material/Slide";
 import Fade from "@mui/material/Fade";
 import Container from "@mui/material/Container";
 

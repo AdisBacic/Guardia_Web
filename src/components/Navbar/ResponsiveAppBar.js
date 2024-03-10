@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -17,7 +15,7 @@ const Navbar = () => {
   };
 
   const pages = [
-    { name: "Användning", path: "/", specialHandle: true },
+    { name: "Information", path: "/moreinfo", specialHandle: true },
     { name: "Priser", path: "/priser" },
     { name: "Support", path: "/support" },
     { name: "Ladda ner", path: "/download" },
@@ -25,7 +23,7 @@ const Navbar = () => {
 
   const handleNavigate = (page) => {
     if (page.name === "Användingsområden") {
-      navigate("/moreinfo/?scrollTo=anvandingsomraden");
+      navigate("/moreinfo");
     } else {
       navigate(page.path);
     }

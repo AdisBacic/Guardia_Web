@@ -8,25 +8,25 @@ import Footer from "../Misc/Footer";
 import Container from "@mui/material/Container";
 
 const MainWindow = () => {
-  const location = useLocation();
-  useEffect(() => {
-    const queryParams = new URLSearchParams(location.search);
-    const shouldScroll = queryParams.get("scrollTo") === "anvandingsomraden";
+  // const location = useLocation();
+  // useEffect(() => {
+  //   const queryParams = new URLSearchParams(location.search);
+  //   const shouldScroll = queryParams.get("scrollTo") === "anvandingsomraden";
 
-    if (shouldScroll) {
-      setTimeout(() => {
-        const section = document.getElementById("anvandingsomraden-section");
-        if (section) {
-          window.scrollTo({
-            top: section.offsetTop,
-            behavior: "smooth",
-          });
-        }
-      }, 0);
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, [location]);
+  //   if (shouldScroll) {
+  //     setTimeout(() => {
+  //       const section = document.getElementById("anvandingsomraden-section");
+  //       if (section) {
+  //         window.scrollTo({
+  //           top: section.offsetTop,
+  //           behavior: "smooth",
+  //         });
+  //       }
+  //     }, 0);
+  //   } else {
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, [location]);
 
   return (
     <>
