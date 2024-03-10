@@ -80,7 +80,7 @@ const IntroToGuardia = () => {
           <img
             src={shieldImg}
             alt="Guardia"
-            className="hidden lg:block absolute -right-60 -bottom-0 h-full "
+            className="hidden lg:block absolute -right-40 -top-5 h-2/5 "
           />
         </div>
       </Container>
