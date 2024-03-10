@@ -50,7 +50,7 @@ const IntroToGuardia = () => {
         </>
       )}
       <Container className="top-1/4 relative rounded-xl pb-10">
-        <div className="flex h-[50vh]">
+        <div className="flex h-[80vh]">
           <div className="text-white w-full lg:w-2/3">
             <h1 className="text-4xl font-poppins-medium pb-8">
               Gör det enkelt att följa{" "}
