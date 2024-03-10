@@ -6,9 +6,14 @@ const PlanCardBasic = () => {
       <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standardplan</h5>
       <div className="flex items-baseline text-white">
         <span className="text-3xl font-semibold"></span>
-        <span className="text-5xl font-extrabold tracking-tight">495:-</span>
+        <span className="text-5xl font-extrabold tracking-tight ">295:-</span>
+
+
         <span className="ms-1 text-xl font-normal text-gray-400">/månad</span>
+
       </div>
+      <span className="text-3xl font-extrabold tracking-tight line-through">495:-</span>
+
       <ul role="list" className="space-y-5 my-7">
         {[
           { text: '50 Artiklar', available: true },

@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import Maincard from "../Misc/Maincard";
 import MiddleSection from "../Misc/MiddleSection";
 import Footer from "../Misc/Footer";
+import Container from "@mui/material/Container";
 
 const MainWindow = () => {
   const location = useLocation();
@@ -29,11 +30,13 @@ const MainWindow = () => {
 
   return (
     <>
-      <div className="flex flex-col h-screen ">
+      <div className="flex flex-col h-full ">
         <ResponsiveAppBar />
+        <Container>
         <Maincard />
         <MiddleSection />
         <Footer />
+        </Container>
       </div>
     </>
   );
