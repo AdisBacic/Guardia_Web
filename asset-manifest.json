@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.df999f76.css",
-    "main.js": "/static/js/main.d99beded.js",
+    "main.css": "/static/css/main.08fda272.css",
+    "main.js": "/static/js/main.642efceb.js",
     "static/media/Construction.jpg": "/static/media/Construction.511d6c8487c9760fd63b.jpg",
     "static/media/Hreception.jpg": "/static/media/Hreception.49bd155be99dffe4b8d8.jpg",
     "static/media/Fastighet.jpg": "/static/media/Fastighet.1cc6a272e82f131a4003.jpg",
+    "static/media/DashboardGuardia.png": "/static/media/DashboardGuardia.dd54302666532e2b25ae.png",
+    "static/media/OrderWindow.png": "/static/media/OrderWindow.c2e743d93c5fdd992c54.png",
     "static/media/Securityguard.jpg": "/static/media/Securityguard.d20f0917ae5118cde398.jpg",
-    "static/media/DashboardGuardia.png": "/static/media/DashboardGuardia.ce1ccd8b11c065fe2e8e.png",
-    "static/media/OrderWindow.png": "/static/media/OrderWindow.9477d71457aa3f26fa4c.png",
     "static/media/ShieldHighRes.png": "/static/media/ShieldHighRes.c7bbdc0eba7ed232621f.png",
     "static/media/Poppins-ThinItalic.ttf": "/static/media/Poppins-ThinItalic.9d5e661e645ce9a32fe6.ttf",
     "static/media/Poppins-ExtraLightItalic.ttf": "/static/media/Poppins-ExtraLightItalic.dbdfd398abcbbafc022b.ttf",
@@ -29,11 +29,11 @@
     "static/media/Poppins-Black.ttf": "/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/elementor-placeholder-image.webp": "/static/media/elementor-placeholder-image.aadba29c0fa8fe2da964.webp",
     "index.html": "/index.html",
-    "main.df999f76.css.map": "/static/css/main.df999f76.css.map",
-    "main.d99beded.js.map": "/static/js/main.d99beded.js.map"
+    "main.08fda272.css.map": "/static/css/main.08fda272.css.map",
+    "main.642efceb.js.map": "/static/js/main.642efceb.js.map"
   },
   "entrypoints": [
-    "static/css/main.df999f76.css",
-    "static/js/main.d99beded.js"
+    "static/css/main.08fda272.css",
+    "static/js/main.642efceb.js"
   ]
 }
