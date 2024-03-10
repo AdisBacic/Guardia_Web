@@ -1,6 +1,6 @@
 import React from "react";
-import DashboardGuardia from "../../assets/images/DashboardGuardia.png";
 import { motion } from "framer-motion";
+import OrderWindow from '../../assets/images/OrderWindow.png';
 
 const BenefitsCard = () => {
   return (
@@ -13,9 +13,9 @@ const BenefitsCard = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, delay: 0.5 }}
-          className="rounded w-full md:w-1/2 object-cover object-center md:h-auto shadow-2xl mb-10"
-          src={DashboardGuardia}
-          alt="Dashboard Guardia"
+          className="rounded w-full md:w-1/2 object-contain md:h-auto shadow-2xl mb-10"
+          src={OrderWindow}
+          alt="OrderWindow"
           viewport={{ once: true }}
         />
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import OrderWindow from '../../assets/images/OrderWindow.png';
 import { motion } from 'framer-motion';
 import { once } from 'events';
+import DashboardGuardia from "../../assets/images/DashboardGuardia.png";
 
 const HowItWorksCard = () => {
   return (
@@ -44,9 +44,9 @@ const HowItWorksCard = () => {
        }}
        viewport={{ once: true }}
 
-      className="rounded w-full md:w-1/2 object-cover object-center md:h-auto shadow-2xl"
-      src={OrderWindow}
-      alt="OrderWindow"
+       className="rounded w-full md:w-1/2 object-contain md:h-auto shadow-2xl mb-10"
+       src={DashboardGuardia}
+      alt="DashboardGuardia"
     />
       </div>
     </div>
