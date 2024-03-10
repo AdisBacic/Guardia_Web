@@ -1,16 +1,31 @@
 import React from "react";
-import shieldImg from "../../assets/images/GuardiaWebLogo.png";
+import shieldImg from "../../assets/images/ShieldHighRes.png";
 import { Container } from "@mui/material";
+import Button from "@mui/material/Button";
+import { NavLink } from "react-router-dom";
 
 const IntroToGuardia = () => {
   return (
-    <Container className="mt-20 relative">
-      <div className="flex items-center">
-        <div className="text-white w-1/2 border">
-            <h1 className=""></h1>
-
+    <Container className="top-1/4 relative">
+      <div className="flex h-[50vh]">
+        <div className="text-white w-full lg:w-2/3 ">
+          <h1 className="text-4xl font-poppins-medium pb-8">
+            Guardia the easiest way to be GDPR compliant, Revoutionalize how you
+            dhtin
+          </h1>
+          <p className="text-gray-400 font-poppins-light pb-8">
+            Guardia is your solution for efficient and secure management of keys
+            and valuable assets, with full respect for GDPR. Ensure that all
+            sensitive information is handled correctly.
+          </p>
+          <NavLink className="pr-2">
+            <Button variant="contained" className="bg-gradient-to-r from-green-600 to-green-900 rounded-none">Boka ett demo</Button>
+          </NavLink>
+          <NavLink>
+            <Button variant="outlined">Läs mer</Button>
+          </NavLink>
         </div>
-      <img src={shieldImg} alt="Guardia" className="absolute -right-60 top-40 hidden md:block" />
+        <img src={shieldImg} alt="Guardia" className="hidden lg:block absolute -right-40 -top-20 h-4/5" />
       </div>
     </Container>
   );
