@@ -35,9 +35,29 @@ const Navbar = () => {
     navigate('/');
   };
 
-  return (
+  return (<>
+
+    <style>
+    {`
+      .underline-animation::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width .3s;
+      }
+      .underline-animation:hover::after {
+        width: 100%;
+      }
+    `}
+  </style>
+
+
+
+    
     <nav className="fixed w-full z-20 top-0 start-0 bg-[#090A0F]">
-      <div className="flex flex-wrap md:flex-row mx-auto p-4 border justify-between">
+      <div className="flex flex-wrap md:flex-row mx-auto p-4 justify-between">
         <div
           className="flex items-right space-x-0 cursor-pointer"
           onClick={navigateHome}
@@ -55,7 +75,7 @@ const Navbar = () => {
             aria-expanded={isMenuOpen ? 'true' : 'false'}
           >
             <span className="sr-only">Open main menu</span>
-            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <svg className="w-5 h-5 pb-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
@@ -71,7 +91,8 @@ const Navbar = () => {
                     } else {
                       navigate(page.path);
                     }
-                  }} className="block py-2 px-3 text-white rounded hover:bg-green-700 hover:text-white md:hover:bg-transparent md:border-0"
+                  }} className="block py-2 px-5 text-white rounded  md:hover:bg-transparent md:border-0 underline-animation"
+
                 >
                   {page.name}
                 </button>
@@ -81,6 +102,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </>
   );
 };
 
