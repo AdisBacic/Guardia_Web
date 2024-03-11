@@ -4,13 +4,13 @@ import { Container } from "@mui/material";
 import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const IntroToGuardia = () => {
   const targetDate = new Date("2024-03-29T17:35:10");
   const [timeLeft, setTimeLeft] = useState(
     targetDate.getTime() - new Date().getTime()
   );
-
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -44,7 +44,13 @@ const IntroToGuardia = () => {
           </div>
         </div>
       ) : (
-        <div className="flex justify-center items-center mt-20 mb-5">
+        <motion.div
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 10 }}
+          transition={{ type: "spring", duration: 1.5, delay: 1.5 }}
+          viewport={{ once: true }}
+          className="flex justify-center items-center mt-20 mb-5"
+        >
           <div className="bg-[#090A0F] rounded-lg p-4 shadow-lg">
             <p className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent text-2xl mt-2 mb-4 text-center">
               Lanseringserbjudande upp till 50% rabatt
@@ -84,12 +90,18 @@ const IntroToGuardia = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
 
-      <Container className="mt-10 relative rounded-xl pb-10 border">
+      <Container className="mt-10 relative rounded-xl pb-10">
         <div className="flex h-[50vh]">
-          <div className="text-white w-full lg:w-4/5">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 10 }}
+            transition={{ type: "spring", duration: 1.5, delay: 1 }}
+            viewport={{ once: true }}
+            className="text-white w-full lg:w-4/5"
+          >
             <h1 className="text-4xl font-poppins-medium pb-8">
               Gör det enkelt att följa{" "}
               <span className="bg-gradient-to-r from-green-600 to-green-900 bg-clip-text text-transparent">
@@ -119,12 +131,16 @@ const IntroToGuardia = () => {
                 <Button variant="outlined">Läs mer</Button>
               </NavLink>
             </div>
-          </div>
+          </motion.div>
 
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", duration: 1.5, delay: 0.5 }}
+            className="hidden lg:block absolute -right-40 -top-5 h-96"
             src={shieldImg}
-            alt="Guardia"
-            className="hidden lg:block absolute -right-40 -top-5 h-96 "
+            alt="OrderWindow"
+            viewport={{ once: true }}
           />
         </div>
       </Container>

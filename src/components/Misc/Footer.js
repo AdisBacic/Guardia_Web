@@ -27,7 +27,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Resurser</h2>
               <ul className="text-gray-400">
               <li className="mb-4">
-                <span onClick={() => handleNavigate('/download')} className="cursor-pointer hover:underline">
+                <span onClick={() => window.location.href = "https://app.guardia.nu" } className="cursor-pointer hover:underline">
                   Guardia App
                 </span>
               </li>
