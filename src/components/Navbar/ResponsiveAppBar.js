@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: "Information", path: "/moreinfo", specialHandle: true },
     { name: "Priser", path: "/priser" },
     { name: "Support", path: "/support" },
-    { name: "Ladda ner", path: "/download" },
+    // { name: "Ladda ner", path: "/download" },
   ];
 
   const handleNavigate = (page) => {

@@ -22,7 +22,7 @@ const RoutesContent = () => {
       <Route path="/" element={<MainWindow />} />
       <Route path="/moreinfo" element={<MoreInfoWindow />} />
       <Route path="/demo" element={<DemoWindow />} />
-      <Route path="/download" element={<DownloadWindow />} />
+      {/* <Route path="/download" element={<DownloadWindow />} /> */}
       <Route path="/priser" element={<PriceWindow />} />
       <Route path="/support" element={<SupportWindow />} />
       <Route path="/privacypolicy" element={<PrivacyPolicyWindow />} />

@@ -72,7 +72,7 @@ const IntroToGuardia = () => {
     )}
 
       <Container className="mt-10 relative rounded-xl pb-10">
-        <div className="flex h-[80vh]">
+        <div className="flex h-[50vh]">
           <div className="text-white w-full lg:w-4/5">
             <h1 className="text-4xl font-poppins-medium pb-8">
               Gör det enkelt att följa{" "}
@@ -102,7 +102,7 @@ const IntroToGuardia = () => {
           <img
             src={shieldImg}
             alt="Guardia"
-            className="hidden lg:block absolute -right-40 -top-5 h-2/5 "
+            className="hidden lg:block absolute -right-40 -top-5 h-3/5 "
           />
         </div>
       </Container>
