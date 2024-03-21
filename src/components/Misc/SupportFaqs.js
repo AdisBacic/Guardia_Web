@@ -17,7 +17,7 @@ const faqs = [
   },   
   {
     question: 'Hur börjar jag använda Guardia?',
-    answer: 'Boka ett demo med oss! Vi kommer att gå igenom Guardia och hur det kan hjälpa dig och ditt företag. Om du är intresserad av att använda Guardia tveka inte att kontakta oss!',
+    answer: 'Boka en demo med oss! Vi kommer att gå igenom Guardia och hur det kan hjälpa dig och ditt företag. Om du är intresserad av att använda Guardia tveka inte att kontakta oss!',
     link: '/demo',
     linkText: 'Boka demo!',
   },  
